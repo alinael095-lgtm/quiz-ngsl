@@ -1,0 +1,29 @@
+# Secrets et variables d'environnement
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node / outils locaux
+node_modules/
+*.log
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Documents de cadrage locaux (règles reprises dans HANDBOOK.md)
+plan-workflow-quiz-ngsl.pdf
