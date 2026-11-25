@@ -1,70 +1,66 @@
 /*
- * Design "Language App" autonome et 100 % hors ligne pour le Quiz NGSL.
- * Inspiré des meilleures applis de langues (Duolingo, Babbel, Quizlet, Drops) :
- * - boutons tactiles 3D ("pop" avec bordure inférieure qui s'enfonce au clic),
- * - barre de progression pilule épaisse avec reflet brillant,
- * - palette chaleureuse et motivante (mode clair doux + mode sombre ardoise profond #131f24),
- * - transitions courtes <= 150 ms respectant prefers-reduced-motion.
+ * Feuille de styles autonome et 100 % hors ligne pour le Quiz NGSL.
+ * Principes UX :
+ * - Hiérarchie épurée : haut compact (contrôles sur 1 ligne même sur mobile,
+ *   barre de progression + stats fusionnées) pour que le mot et « Suivant »
+ *   restent visibles sans scroll.
+ * - Palette disciplinée : 1 couleur principale (--accent), vert/rouge réservés
+ *   au retour ✓/✗, ambre réservé exclusivement au mode Révision actif.
+ * - Transitions courtes <= 150 ms respectant prefers-reduced-motion.
  */
 
 :root {
-  --bg: #f5f7fb;
+  --bg: #f4f6f9;
   --surface: #ffffff;
   --surface-subtle: #f7f9fc;
-  --card-stack: #eef2f7;
-  --border: #e2e8f0;
+  --card-stack: #eaeff6;
+  --border: #dde4ee;
+  --border-strong: #94a3b8;
   --border-shadow: #cbd5e1;
-  --text: #1f2937;
+  --text: #1e293b;
   --text-muted: #64748b;
 
-  /* Couleurs d'apprentissage (bleu vibrant + vert progression + flamme série) */
-  --accent: #1cb0f6;
-  --accent-dark: #1493d6;
-  --accent-soft: #e6f6fe;
-  --accent-border: #84d8ff;
+  /* Couleur principale unique */
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-soft: #eff6ff;
+  --accent-border: #93c5fd;
+  --accent-on: #ffffff;
 
-  --progress-fill: #58cc02;
-  --progress-shine: rgba(255, 255, 255, 0.35);
-
-  --streak-bg: #fff4e0;
-  --streak-text: #d97706;
-  --streak-border: #fcd34d;
-
-  /* Mode Révision : ambre chaleureux (section 10) */
-  --review-accent: #f59e0b;
-  --review-dark: #d97706;
+  /* Mode Révision : ambre utilisé uniquement quand le mode est actif */
+  --review-accent: #d97706;
+  --review-dark: #b45309;
   --review-soft: #fffbeb;
-  --review-border: #fcd34d;
-  --review-text: #b45309;
+  --review-border: #f59e0b;
+  --review-text: #92400e;
 
-  /* Feedback encourageant */
-  --success: #46a302;
-  --success-bg: #e5f9d5;
-  --success-border: #58cc02;
-  --success-shadow: #46a302;
+  /* Retour de réponse uniquement (✓ / ✗) */
+  --success: #15803d;
+  --success-bg: #e7f9ed;
+  --success-border: #22c55e;
+  --success-shadow: #16a34a;
 
-  --error: #dc2626;
-  --error-bg: #ffecec;
-  --error-border: #ff4b4b;
+  --error: #b91c1c;
+  --error-bg: #fef2f2;
+  --error-border: #ef4444;
   --error-shadow: #dc2626;
 
-  --radius-xl: 22px;
-  --radius-lg: 16px;
-  --radius-md: 12px;
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
   --radius-pill: 999px;
-  --shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
-  --track-bg: #e5e7eb;
+  --shadow: 0 8px 26px rgba(15, 23, 42, 0.07);
+  --track-bg: #e2e8f0;
   --kbd-bg: #f1f5f9;
   --kbd-border: #cbd5e1;
-  --dot-empty: #cbd5e1;
-  --danger-bg: #fff1f2;
-  --danger-border: #fda4af;
+  --danger-bg: #fef2f2;
+  --danger-border: #fca5a5;
 
   --transition-fast: 130ms ease;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Nunito", "Quicksand", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Mode sombre doux style appli de langue (ardoise profonde, pas de noir pur) */
+/* Thème sombre doux (ardoise profonde, bon contraste) */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #131f24;
@@ -72,6 +68,7 @@
     --surface-subtle: #16232a;
     --card-stack: #111c21;
     --border: #2b3e48;
+    --border-strong: #587280;
     --border-shadow: #0d161a;
     --text: #f1f5f9;
     --text-muted: #94a9b6;
@@ -80,36 +77,29 @@
     --accent-dark: #0284c7;
     --accent-soft: rgba(56, 189, 248, 0.14);
     --accent-border: #38bdf8;
-
-    --progress-fill: #58cc02;
-    --progress-shine: rgba(255, 255, 255, 0.25);
-
-    --streak-bg: rgba(245, 158, 11, 0.16);
-    --streak-text: #fbbf24;
-    --streak-border: rgba(245, 158, 11, 0.45);
+    --accent-on: #0b1620;
 
     --review-accent: #f59e0b;
     --review-dark: #b45309;
     --review-soft: rgba(245, 158, 11, 0.15);
-    --review-border: #d97706;
+    --review-border: #f59e0b;
     --review-text: #fde68a;
 
-    --success: #79e526;
-    --success-bg: rgba(88, 204, 2, 0.16);
-    --success-border: #58cc02;
-    --success-shadow: #3f9600;
+    --success: #4ade80;
+    --success-bg: rgba(34, 197, 94, 0.16);
+    --success-border: #22c55e;
+    --success-shadow: #15803d;
 
-    --error: #ff7b7b;
-    --error-bg: rgba(255, 75, 75, 0.16);
-    --error-border: #ff4b4b;
-    --error-shadow: #c82828;
+    --error: #f87171;
+    --error-bg: rgba(239, 68, 68, 0.16);
+    --error-border: #ef4444;
+    --error-shadow: #b91c1c;
 
-    --shadow: 0 14px 36px rgba(0, 0, 0, 0.38);
+    --shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
     --track-bg: #263842;
     --kbd-bg: #22343d;
     --kbd-border: #344c58;
-    --dot-empty: #344c58;
-    --danger-bg: rgba(255, 75, 75, 0.14);
+    --danger-bg: rgba(239, 68, 68, 0.14);
     --danger-border: #b91c1c;
   }
 }
@@ -120,6 +110,7 @@
   --surface-subtle: #16232a;
   --card-stack: #111c21;
   --border: #2b3e48;
+  --border-strong: #587280;
   --border-shadow: #0d161a;
   --text: #f1f5f9;
   --text-muted: #94a9b6;
@@ -128,46 +119,39 @@
   --accent-dark: #0284c7;
   --accent-soft: rgba(56, 189, 248, 0.14);
   --accent-border: #38bdf8;
-
-  --progress-fill: #58cc02;
-  --progress-shine: rgba(255, 255, 255, 0.25);
-
-  --streak-bg: rgba(245, 158, 11, 0.16);
-  --streak-text: #fbbf24;
-  --streak-border: rgba(245, 158, 11, 0.45);
+  --accent-on: #0b1620;
 
   --review-accent: #f59e0b;
   --review-dark: #b45309;
   --review-soft: rgba(245, 158, 11, 0.15);
-  --review-border: #d97706;
+  --review-border: #f59e0b;
   --review-text: #fde68a;
 
-  --success: #79e526;
-  --success-bg: rgba(88, 204, 2, 0.16);
-  --success-border: #58cc02;
-  --success-shadow: #3f9600;
+  --success: #4ade80;
+  --success-bg: rgba(34, 197, 94, 0.16);
+  --success-border: #22c55e;
+  --success-shadow: #15803d;
 
-  --error: #ff7b7b;
-  --error-bg: rgba(255, 75, 75, 0.16);
-  --error-border: #ff4b4b;
-  --error-shadow: #c82828;
+  --error: #f87171;
+  --error-bg: rgba(239, 68, 68, 0.16);
+  --error-border: #ef4444;
+  --error-shadow: #b91c1c;
 
-  --shadow: 0 14px 36px rgba(0, 0, 0, 0.38);
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
   --track-bg: #263842;
   --kbd-bg: #22343d;
   --kbd-border: #344c58;
-  --dot-empty: #344c58;
-  --danger-bg: rgba(255, 75, 75, 0.14);
+  --danger-bg: rgba(239, 68, 68, 0.14);
   --danger-border: #b91c1c;
 }
 
-/* Mode Révision : tout l'accent bascule en ambre chaleureux */
+/* Mode Révision actif : l'accent principal bascule en ambre */
 .quiz-card.review-mode {
   --accent: var(--review-accent);
   --accent-dark: var(--review-dark);
   --accent-soft: var(--review-soft);
   --accent-border: var(--review-border);
-  --progress-fill: var(--review-accent);
+  --accent-on: #ffffff;
   border-color: var(--review-border);
 }
 
@@ -189,7 +173,7 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 16px 14px;
+  padding: 14px 12px;
   transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
@@ -207,66 +191,36 @@ body {
 
 .app-shell {
   width: 100%;
-  max-width: 620px;
+  max-width: 610px;
 }
 
 .quiz-card {
   background: var(--surface);
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
-  padding: 18px 22px 14px;
+  padding: 16px 20px 14px;
   transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
-/* En-tête chaleureux et épuré */
+/* En-tête compact (2 lignes max, même sur mobile) */
 .card-header {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .header-title-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   margin-bottom: 10px;
-}
-
-.brand-lockup {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.brand-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--progress-fill);
-  box-shadow: 0 0 0 4px rgba(88, 204, 2, 0.18);
-  transition: background-color var(--transition-fast);
-}
-
-.quiz-card.review-mode .brand-dot {
-  background: var(--review-accent);
-  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
 }
 
 .app-title {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.12rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-}
-
-.brand-version {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  padding: 2px 8px;
-  border-radius: var(--radius-pill);
-  background: var(--surface-subtle);
-  border: 1px solid var(--border);
 }
 
 .header-right {
@@ -277,26 +231,31 @@ body {
 
 .mode-badge {
   display: inline-block;
-  padding: 4px 11px;
+  padding: 3px 9px;
   border-radius: var(--radius-pill);
   background: var(--review-soft);
   color: var(--review-text);
   border: 1.5px solid var(--review-border);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.02em;
 }
 
+/* Bouton thème : simple icône ☀ / ☾ sans ambiguïté */
 .theme-btn {
-  min-height: 34px;
-  padding: 5px 12px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius-pill);
-  border: 2px solid var(--border);
-  background: var(--surface);
+  border: 1.5px solid var(--border);
+  background: var(--surface-subtle);
   color: var(--text);
   font-family: inherit;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
   cursor: pointer;
   transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
@@ -306,29 +265,31 @@ body {
   background: var(--accent-soft);
 }
 
-/* Contrôles en pilules tactiles */
+/* Contrôles sur UNE seule ligne même sur mobile (390px) */
 .controls-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
 }
 
 .control-group {
-  flex: 1 1 180px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .control-select,
 .control-btn {
   width: 100%;
-  min-height: 42px;
-  padding: 8px 14px;
+  min-height: 38px;
+  padding: 6px 10px;
   border-radius: var(--radius-md);
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   border-bottom-width: 3px;
   background: var(--surface);
   color: var(--text);
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
   transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
@@ -336,7 +297,8 @@ body {
 
 .control-btn {
   width: auto;
-  flex: 0 1 auto;
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 .control-select:hover,
@@ -347,15 +309,10 @@ body {
 
 .control-btn:active:not(:disabled) {
   transform: translateY(1px);
-  border-bottom-width: 2px;
+  border-bottom-width: 1.5px;
 }
 
-.control-btn-review {
-  border-color: var(--review-border);
-  color: var(--review-text);
-  background: var(--review-soft);
-}
-
+/* Bouton Révision neutre au repos, ambre uniquement quand le mode Révision est actif */
 .control-btn-review.active {
   background: var(--review-accent);
   border-color: var(--review-dark);
@@ -363,115 +320,88 @@ body {
 }
 
 .control-btn-review:disabled {
-  opacity: 0.55;
+  opacity: 0.48;
   cursor: not-allowed;
   background: var(--surface-subtle);
   border-color: var(--border);
   color: var(--text-muted);
 }
 
-.review-empty-hint {
-  margin: 4px 0 0;
-  min-height: 16px;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-}
-
-/* Barre de progression pilule (signature Duolingo) + badges Session & Série */
+/* Bandeau fin fusionnant barre de progression + session + série */
 .session-bar {
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  margin-bottom: 14px;
-}
-
-.progress-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.82rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  margin-bottom: 5px;
-}
-
-#progress-percent {
-  color: var(--text);
+  gap: 6px;
+  margin-bottom: 12px;
 }
 
 .progress-track {
   width: 100%;
-  height: 12px;
+  height: 8px;
   background: var(--track-bg);
   border-radius: var(--radius-pill);
   overflow: hidden;
 }
 
 .progress-fill {
-  position: relative;
   height: 100%;
-  background: var(--progress-fill);
+  background: var(--accent);
   border-radius: var(--radius-pill);
   transition: width 150ms ease, background-color var(--transition-fast);
 }
 
-/* Reflet subtil style barre de progression Duolingo */
-.progress-fill::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 6px;
-  right: 6px;
-  height: 4px;
-  border-radius: var(--radius-pill);
-  background: var(--progress-shine);
-}
-
-.session-metrics {
+.session-inline-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
-.metric-pill {
+.meta-progress,
+.meta-session {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 4px 12px;
-  border-radius: var(--radius-pill);
-  font-size: 0.84rem;
+}
+
+.meta-sep {
+  opacity: 0.5;
+}
+
+/* Série neutre quand à 0, accentuée seulement quand >= 1 */
+.streak-inline {
+  display: inline-block;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.streak-inline.has-streak {
+  color: var(--accent);
   font-weight: 800;
-  background: var(--surface-subtle);
-  border: 1.5px solid var(--border);
-  color: var(--text);
 }
 
-#session-streak {
-  background: var(--streak-bg);
-  border-color: var(--streak-border);
-  color: var(--streak-text);
-}
-
-#session-streak.is-pop {
+.streak-inline.is-pop {
   animation: popBadge 140ms ease;
 }
 
-/* Carte flashcard du mot cible avec léger effet "pile de cartes" */
+/* Flashcard du mot cible */
 .word-display {
   position: relative;
   text-align: center;
-  padding: 20px 18px 14px;
-  margin-bottom: 14px;
-  border: 2px solid var(--border);
+  padding: 20px 16px 14px;
+  margin-bottom: 12px;
+  border: 1.5px solid var(--border);
   border-bottom-width: 4px;
   border-radius: var(--radius-lg);
   background: var(--surface-subtle);
-  box-shadow: 0 5px 0 -2px var(--card-stack);
+  box-shadow: 0 4px 0 -2px var(--card-stack);
 }
 
 .target-word {
-  font-size: clamp(2rem, 5.5vw, 2.85rem);
+  font-size: clamp(1.95rem, 6vw, 2.75rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -491,27 +421,18 @@ body {
 
 .pos-tag {
   display: inline-block;
-  padding: 3px 11px;
+  padding: 2px 10px;
   border-radius: var(--radius-pill);
-  background: var(--accent-soft);
-  color: var(--accent-dark);
-  font-size: 0.78rem;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.74rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   visibility: hidden;
   opacity: 0;
   transition: opacity var(--transition-fast);
-}
-
-:root[data-theme="dark"] .pos-tag {
-  color: var(--accent);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .pos-tag {
-    color: var(--accent);
-  }
 }
 
 .pos-tag.visible {
@@ -522,12 +443,12 @@ body {
 /* Pilule discrète du rang de fréquence (#142) révélée après réponse */
 .rank-pill {
   display: inline-block;
-  padding: 3px 10px;
+  padding: 2px 9px;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--border);
   background: var(--surface);
   color: var(--text-muted);
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   font-weight: 700;
   visibility: hidden;
   opacity: 0;
@@ -539,18 +460,18 @@ body {
   opacity: 1;
 }
 
-/* Indicateur visuel de maîtrise du mot en cours (●●○) révélé après réponse */
+/* Indicateur de maîtrise (●●○) : points bien visibles et motivants */
 .mastery-indicator {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 3px 11px;
+  gap: 7px;
+  padding: 3px 10px;
   border-radius: var(--radius-pill);
   border: 1.5px solid var(--border);
   background: var(--surface);
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: var(--text);
   visibility: hidden;
   opacity: 0;
   transition: opacity var(--transition-fast);
@@ -571,30 +492,35 @@ body {
 .mastery-dots {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
 }
 
 .mastery-dot {
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background: var(--dot-empty);
+  background: transparent;
+  border: 1.5px solid var(--border-strong);
 }
 
 .mastery-dot.filled {
   background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
 }
 
 .mastery-indicator.is-mastered .mastery-dot.filled {
   background: var(--success-border);
+  border-color: var(--success-border);
+  box-shadow: 0 0 0 2px var(--success-bg);
 }
 
-/* Grille 2x2 de boutons tactiles 3D ("pop" style Duolingo / Quizlet) */
+/* Grille 2x2 des 4 réponses (1 colonne sur mobile) */
 .choices-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .choice-btn {
@@ -605,12 +531,12 @@ body {
   min-height: 52px;
   padding: 10px 14px;
   border-radius: var(--radius-lg);
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   border-bottom: 4px solid var(--border-shadow);
   background: var(--surface);
   color: var(--text);
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 700;
   text-align: left;
   cursor: pointer;
@@ -646,20 +572,20 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
   background: var(--kbd-bg);
   border: 1.5px solid var(--kbd-border);
   color: var(--text-muted);
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   font-weight: 800;
   transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
 }
 
 .choice-btn:hover:not(:disabled) .choice-key {
   border-color: var(--accent);
-  color: var(--accent-dark);
+  color: var(--accent);
 }
 
 .choice-label {
@@ -670,7 +596,7 @@ body {
   flex: 0 0 auto;
   font-size: 1.15rem;
   font-weight: 900;
-  min-width: 20px;
+  min-width: 18px;
   text-align: right;
 }
 
@@ -705,12 +631,12 @@ body {
   opacity: 0.52;
 }
 
-/* Zone de résultat de hauteur fixe, douce et encourageante */
+/* Zone de résultat de hauteur fixe */
 .feedback-zone {
-  min-height: 90px;
-  padding: 12px 16px;
+  min-height: 86px;
+  padding: 12px 14px;
   border-radius: var(--radius-lg);
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   background: var(--surface-subtle);
   display: flex;
   align-items: center;
@@ -731,7 +657,7 @@ body {
 .feedback-placeholder {
   width: 100%;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--text-muted);
 }
@@ -741,7 +667,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 12px;
 }
 
 .feedback-text {
@@ -749,9 +675,9 @@ body {
 }
 
 .feedback-status {
-  margin: 0 0 4px;
+  margin: 0 0 3px;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 0.96rem;
 }
 
 .feedback-correct .feedback-status {
@@ -764,44 +690,32 @@ body {
 
 .feedback-translations {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--text);
 }
 
-/* Bouton CTA 3D tactile (style Duolingo) */
+/* Bouton Suivant : toujours de la couleur principale (jamais rouge après erreur) */
 .next-btn,
 .primary-action-btn {
   flex: 0 0 auto;
-  min-height: 46px;
-  padding: 10px 20px;
+  min-height: 44px;
+  padding: 9px 18px;
   border: none;
-  border-bottom: 4px solid var(--success-shadow);
+  border-bottom: 4px solid var(--accent-dark);
   border-radius: var(--radius-md);
-  background: var(--progress-fill);
-  color: #ffffff;
+  background: var(--accent);
+  color: var(--accent-on);
   font-family: inherit;
-  font-size: 0.96rem;
+  font-size: 0.94rem;
   font-weight: 800;
-  letter-spacing: 0.01em;
   cursor: pointer;
   transition: filter var(--transition-fast), transform var(--transition-fast);
 }
 
-.feedback-wrong .next-btn {
-  background: var(--error-border);
-  border-bottom-color: var(--error-shadow);
-}
-
-.quiz-card.review-mode .next-btn,
-.quiz-card.review-mode .primary-action-btn {
-  background: var(--review-accent);
-  border-bottom-color: var(--review-dark);
-}
-
 .next-btn:hover,
 .primary-action-btn:hover {
-  filter: brightness(1.05);
+  filter: brightness(1.06);
 }
 
 .next-btn:active,
@@ -813,8 +727,8 @@ body {
 kbd {
   display: inline-block;
   padding: 1px 6px;
-  border-radius: 6px;
-  border: 1.5px solid var(--kbd-border);
+  border-radius: 5px;
+  border: 1px solid var(--kbd-border);
   background: var(--kbd-bg);
   color: inherit;
   font-family: inherit;
@@ -830,71 +744,71 @@ kbd {
 /* État spécial (palier maîtrisé / révision vide) */
 .special-state {
   text-align: center;
-  padding: 32px 18px;
-  margin-bottom: 18px;
-  border: 2px dashed var(--border);
+  padding: 28px 16px;
+  margin-bottom: 14px;
+  border: 1.5px dashed var(--border);
   border-radius: var(--radius-lg);
   background: var(--surface-subtle);
 }
 
 .special-title {
   margin: 0 0 8px;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 800;
 }
 
 .special-subtitle {
-  margin: 0 0 18px;
+  margin: 0 0 16px;
   color: var(--text-muted);
-  font-size: 0.94rem;
+  font-size: 0.92rem;
 }
 
 /* Panneau repliable Tableau de bord */
 .dashboard-panel {
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--surface-subtle);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .dashboard-summary {
-  padding: 13px 16px;
+  padding: 11px 14px;
   font-weight: 800;
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   cursor: pointer;
   user-select: none;
 }
 
 .dashboard-body {
-  padding: 0 16px 16px;
-  border-top: 1.5px solid var(--border);
+  padding: 0 14px 14px;
+  border-top: 1px solid var(--border);
 }
 
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin: 14px 0;
+  gap: 8px;
+  margin: 12px 0;
 }
 
 .stat-box {
   background: var(--surface);
   border: 1.5px solid var(--border);
   border-radius: var(--radius-md);
-  padding: 12px 14px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
 }
 
 .stat-label {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
   color: var(--text-muted);
 }
 
 .stat-value {
-  font-size: 1.02rem;
+  font-size: 0.98rem;
   font-weight: 800;
 }
 
@@ -906,18 +820,18 @@ kbd {
 
 .secondary-btn,
 .danger-btn {
-  min-height: 40px;
-  padding: 8px 14px;
+  min-height: 38px;
+  padding: 7px 12px;
   border-radius: var(--radius-md);
   font-family: inherit;
-  font-size: 0.86rem;
+  font-size: 0.84rem;
   font-weight: 700;
   cursor: pointer;
   transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
 .secondary-btn {
-  border: 2px solid var(--border);
+  border: 1.5px solid var(--border);
   background: var(--surface);
   color: var(--text);
 }
@@ -928,7 +842,7 @@ kbd {
 }
 
 .danger-btn {
-  border: 2px solid var(--danger-border);
+  border: 1.5px solid var(--danger-border);
   background: var(--danger-bg);
   color: var(--error);
   margin-left: auto;
@@ -941,8 +855,8 @@ kbd {
 
 .backup-message {
   margin: 8px 0 0;
-  min-height: 18px;
-  font-size: 0.84rem;
+  min-height: 16px;
+  font-size: 0.82rem;
   font-weight: 700;
 }
 
@@ -957,28 +871,59 @@ kbd {
 /* Pied de page licence */
 .card-footer {
   text-align: center;
-  font-size: 0.76rem;
+  font-size: 0.74rem;
   color: var(--text-muted);
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 @media (max-width: 520px) {
   body {
-    padding: 14px 10px;
+    padding: 8px 8px;
   }
 
   .quiz-card {
-    padding: 18px 16px 14px;
-    border-radius: 18px;
+    padding: 12px 12px 10px;
+    border-radius: 16px;
+  }
+
+  .header-title-row {
+    margin-bottom: 8px;
+  }
+
+  .control-select,
+  .control-btn {
+    min-height: 36px;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+
+  .word-display {
+    padding: 14px 12px 10px;
+    margin-bottom: 10px;
   }
 
   .choices-grid {
     grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .choice-btn {
+    min-height: 48px;
+    padding: 8px 12px;
+    font-size: 0.94rem;
+  }
+
+  .feedback-zone {
+    min-height: 78px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
   }
 
   .feedback-content {
     flex-direction: column;
     align-items: stretch;
+    gap: 8px;
   }
 
   .stats-grid {
