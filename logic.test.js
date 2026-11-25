@@ -272,13 +272,31 @@ test("Persistance et validation de l'import JSON", () => {
   // Import valide
   const valid = logic.validateImportedData({
     version: 1,
-    settings: { tier: "501-1000", direction: "fr-en" },
+    settings: { tier: "501-1000", direction: "fr-en", theme: "dark" },
     words: { "25": { seen: 4, correct: 3, streak: 2, inErrors: false } },
     stats: { bestStreak: 14 },
   });
   assert.strictEqual(valid.valid, true);
   assert.strictEqual(valid.state.settings.tier, "501-1000");
+  assert.strictEqual(valid.state.settings.theme, "dark");
   assert.strictEqual(valid.state.stats.bestStreak, 14);
+
+  // Rétrocompatibilité : ancienne sauvegarde sans champ theme -> "auto"
+  const legacy = logic.validateImportedData({
+    version: 1,
+    settings: { tier: "1-500", direction: "en-fr" },
+    words: {},
+    stats: { bestStreak: 0 },
+  });
+  assert.strictEqual(legacy.valid, true);
+  assert.strictEqual(legacy.state.settings.theme, "auto");
+
+  // Préservation du thème après recordAnswer
+  const afterAnswer = logic.recordAnswer(valid.state, 25, true, {
+    isReviewMode: false,
+    currentSessionStreak: 0,
+  });
+  assert.strictEqual(afterAnswer.state.settings.theme, "dark");
 });
 
 console.log(`\nRésultat : ${passed} réussi(s), ${failed} échoué(s).`);

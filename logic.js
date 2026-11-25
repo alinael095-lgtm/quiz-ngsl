@@ -139,6 +139,7 @@
       settings: {
         tier: "1-500",
         direction: "en-fr",
+        theme: "auto",
       },
       words: {},
       stats: {
@@ -181,6 +182,13 @@
       }
       if (data.settings.direction === "en-fr" || data.settings.direction === "fr-en") {
         base.settings.direction = data.settings.direction;
+      }
+      if (
+        data.settings.theme === "auto" ||
+        data.settings.theme === "light" ||
+        data.settings.theme === "dark"
+      ) {
+        base.settings.theme = data.settings.theme;
       }
     }
 
@@ -309,6 +317,7 @@
       settings: {
         tier: (state && state.settings && state.settings.tier) || "1-500",
         direction: (state && state.settings && state.settings.direction) || "en-fr",
+        theme: (state && state.settings && state.settings.theme) || "auto",
       },
       words: Object.assign({}, state && state.words ? state.words : {}, {
         [String(rank)]: nextEntry,

@@ -32,6 +32,7 @@
   const els = {
     quizCard: document.getElementById("quiz-card"),
     modeBadge: document.getElementById("mode-badge"),
+    themeBtn: document.getElementById("theme-btn"),
     tierSelect: document.getElementById("tier-select"),
     directionBtn: document.getElementById("direction-btn"),
     reviewBtn: document.getElementById("review-btn"),
@@ -93,6 +94,34 @@
     } catch (_err) {
       // Ignorer silencieusement si localStorage est indisponible
     }
+  }
+
+  const systemDarkQuery = window.matchMedia
+    ? window.matchMedia("(prefers-color-scheme: dark)")
+    : null;
+
+  function getEffectiveTheme() {
+    const pref = state && state.settings ? state.settings.theme : "auto";
+    if (pref === "dark" || pref === "light") {
+      return pref;
+    }
+    return systemDarkQuery && systemDarkQuery.matches ? "dark" : "light";
+  }
+
+  function applyTheme() {
+    const pref = state && state.settings ? state.settings.theme : "auto";
+    if (pref === "dark" || pref === "light") {
+      document.documentElement.setAttribute("data-theme", pref);
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+
+    const effective = getEffectiveTheme();
+    els.themeBtn.textContent = effective === "dark" ? "☀️ Clair" : "🌙 Sombre";
+    els.themeBtn.setAttribute(
+      "aria-label",
+      effective === "dark" ? "Passer au thème clair" : "Passer au thème sombre"
+    );
   }
 
   function populateTierSelect() {
@@ -361,6 +390,21 @@
   }
 
   // Événements des contrôles
+  els.themeBtn.addEventListener("click", function () {
+    const effective = getEffectiveTheme();
+    state.settings.theme = effective === "dark" ? "light" : "dark";
+    saveState();
+    applyTheme();
+  });
+
+  if (systemDarkQuery && typeof systemDarkQuery.addEventListener === "function") {
+    systemDarkQuery.addEventListener("change", function () {
+      if (state.settings.theme === "auto") {
+        applyTheme();
+      }
+    });
+  }
+
   els.tierSelect.addEventListener("change", function () {
     state.settings.tier = els.tierSelect.value;
     allowMasteredOverride = false;
@@ -457,6 +501,7 @@
         isReviewMode = false;
         allowMasteredOverride = false;
         els.tierSelect.value = state.settings.tier;
+        applyTheme();
         saveState();
         showBackupMessage("Progression importée avec succès.", false);
         renderNextQuestion();
@@ -483,12 +528,14 @@
     sessionCorrect = 0;
     sessionStreak = 0;
     els.tierSelect.value = state.settings.tier;
+    applyTheme();
     saveState();
     showBackupMessage("Progression réinitialisée.", false);
     renderNextQuestion();
   });
 
   // Initialisation au démarrage
+  applyTheme();
   populateTierSelect();
   renderNextQuestion();
 })();
