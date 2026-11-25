@@ -16,7 +16,8 @@
       "les"
     ],
     "fr_main": "le",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 2,
@@ -27,7 +28,8 @@
       "exister"
     ],
     "fr_main": "être",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 3,
@@ -37,7 +39,8 @@
       "et"
     ],
     "fr_main": "et",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 4,
@@ -47,7 +50,8 @@
       "de"
     ],
     "fr_main": "de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 5,
@@ -59,7 +63,8 @@
       "pour"
     ],
     "fr_main": "à",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 6,
@@ -70,7 +75,8 @@
       "une"
     ],
     "fr_main": "un",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 7,
@@ -82,7 +88,8 @@
       "à"
     ],
     "fr_main": "dans",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 8,
@@ -93,7 +100,8 @@
       "posséder"
     ],
     "fr_main": "avoir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 9,
@@ -105,7 +113,8 @@
       "elle"
     ],
     "fr_main": "cela",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 10,
@@ -116,7 +125,8 @@
       "tu"
     ],
     "fr_main": "vous",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 11,
@@ -127,7 +137,8 @@
       "lui"
     ],
     "fr_main": "il",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 12,
@@ -138,7 +149,8 @@
       "pendant"
     ],
     "fr_main": "pour",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 13,
@@ -149,7 +161,8 @@
       "elles"
     ],
     "fr_main": "ils",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 14,
@@ -161,7 +174,8 @@
       "non"
     ],
     "fr_main": "ne pas",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 15,
@@ -171,7 +185,8 @@
       "que"
     ],
     "fr_main": "que",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 16,
@@ -182,7 +197,8 @@
       "on"
     ],
     "fr_main": "nous",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 17,
@@ -194,7 +210,8 @@
       "en"
     ],
     "fr_main": "sur",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 18,
@@ -204,7 +221,8 @@
       "avec"
     ],
     "fr_main": "avec",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 19,
@@ -216,7 +234,8 @@
       "cette"
     ],
     "fr_main": "ce",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 20,
@@ -227,7 +246,8 @@
       "moi"
     ],
     "fr_main": "je",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 21,
@@ -238,7 +258,8 @@
       "agir"
     ],
     "fr_main": "faire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 22,
@@ -249,7 +270,8 @@
       "en tant que"
     ],
     "fr_main": "comme",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 23,
@@ -261,7 +283,8 @@
       "en"
     ],
     "fr_main": "à",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 24,
@@ -271,7 +294,8 @@
       "elle"
     ],
     "fr_main": "elle",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 25,
@@ -281,7 +305,8 @@
       "mais"
     ],
     "fr_main": "mais",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 26,
@@ -293,7 +318,8 @@
       "à partir de"
     ],
     "fr_main": "de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 27,
@@ -304,18 +330,21 @@
       "près de"
     ],
     "fr_main": "par",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 28,
     "en": "will",
     "pos": "modal",
     "fr": [
+      "futur",
       "aller",
       "vouloir"
     ],
-    "fr_main": "aller",
-    "checked": false
+    "fr_main": "futur",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 29,
@@ -326,7 +355,8 @@
       "soit"
     ],
     "fr_main": "ou",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 30,
@@ -338,7 +368,8 @@
       "déclarer"
     ],
     "fr_main": "dire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 31,
@@ -362,7 +393,8 @@
       "ainsi"
     ],
     "fr_main": "tellement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 33,
@@ -374,7 +406,8 @@
       "toutes"
     ],
     "fr_main": "tout",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 34,
@@ -384,7 +417,8 @@
       "si"
     ],
     "fr_main": "si",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 35,
@@ -395,18 +429,20 @@
       "une"
     ],
     "fr_main": "un",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 36,
     "en": "would",
     "pos": "modal",
     "fr": [
-      "vouloir",
-      "devoir"
+      "voudrait",
+      "conditionnel"
     ],
-    "fr_main": "vouloir",
-    "checked": false
+    "fr_main": "voudrait",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 37,
@@ -418,7 +454,8 @@
       "au sujet de"
     ],
     "fr_main": "à propos de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 38,
@@ -441,7 +478,8 @@
       "que"
     ],
     "fr_main": "lequel",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 40,
@@ -453,7 +491,8 @@
       "y"
     ],
     "fr_main": "là",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 41,
@@ -475,7 +514,8 @@
       "davantage"
     ],
     "fr_main": "plus",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 43,
@@ -497,7 +537,8 @@
       "qui"
     ],
     "fr_main": "qui",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 45,
@@ -519,7 +560,8 @@
       "lorsque"
     ],
     "fr_main": "quand",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 47,
@@ -579,7 +621,8 @@
       "ce que"
     ],
     "fr_main": "quoi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 52,
@@ -591,7 +634,8 @@
       "debout"
     ],
     "fr_main": "en haut",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 53,
@@ -603,7 +647,8 @@
       "certains"
     ],
     "fr_main": "quelques",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 54,
@@ -614,7 +659,8 @@
       "autres"
     ],
     "fr_main": "autre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 55,
@@ -625,7 +671,8 @@
       "à l'extérieur"
     ],
     "fr_main": "dehors",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 56,
@@ -648,7 +695,8 @@
       "peuple"
     ],
     "fr_main": "gens",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 58,
@@ -659,7 +707,8 @@
       "année"
     ],
     "fr_main": "an",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 59,
@@ -682,7 +731,8 @@
       "pas de"
     ],
     "fr_main": "aucun",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 61,
@@ -705,7 +755,8 @@
       "puisque"
     ],
     "fr_main": "parce que",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 63,
@@ -717,7 +768,8 @@
       "tout à fait"
     ],
     "fr_main": "très",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 64,
@@ -751,7 +803,8 @@
       "savoir"
     ],
     "fr_main": "pouvoir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 67,
@@ -784,7 +837,8 @@
       "que"
     ],
     "fr_main": "que",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 70,
@@ -796,7 +850,8 @@
       "actuellement"
     ],
     "fr_main": "maintenant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 71,
@@ -808,7 +863,8 @@
       "alors"
     ],
     "fr_main": "ensuite",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 72,
@@ -820,7 +876,8 @@
       "de plus"
     ],
     "fr_main": "aussi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 73,
@@ -832,7 +889,8 @@
       "vers"
     ],
     "fr_main": "dans",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 74,
@@ -843,7 +901,8 @@
       "uniquement"
     ],
     "fr_main": "seulement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 75,
@@ -867,7 +926,8 @@
       "souhaiter"
     ],
     "fr_main": "vouloir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 77,
@@ -890,7 +950,8 @@
       "première"
     ],
     "fr_main": "premier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 79,
@@ -902,7 +963,8 @@
       "neuf"
     ],
     "fr_main": "nouveau",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 80,
@@ -914,7 +976,8 @@
       "chemin"
     ],
     "fr_main": "façon",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 81,
@@ -938,7 +1001,8 @@
       "plus de"
     ],
     "fr_main": "sur",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 83,
@@ -950,7 +1014,8 @@
       "tout"
     ],
     "fr_main": "n'importe quel",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 84,
@@ -960,7 +1025,8 @@
       "après"
     ],
     "fr_main": "après",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 85,
@@ -971,7 +1037,8 @@
       "journée"
     ],
     "fr_main": "jour",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 86,
@@ -981,7 +1048,8 @@
       "où"
     ],
     "fr_main": "où",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 87,
@@ -992,7 +1060,8 @@
       "truc"
     ],
     "fr_main": "chose",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 88,
@@ -1003,7 +1072,8 @@
       "très"
     ],
     "fr_main": "le plus",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 89,
@@ -1014,19 +1084,22 @@
       "devoir"
     ],
     "fr_main": "devrait",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 90,
     "en": "need",
     "pos": "verb",
     "fr": [
+      "avoir besoin",
       "avoir besoin de",
       "nécessiter",
       "falloir"
     ],
-    "fr_main": "avoir besoin de",
-    "checked": false
+    "fr_main": "avoir besoin",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 91,
@@ -1037,7 +1110,8 @@
       "très"
     ],
     "fr_main": "beaucoup",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 92,
@@ -1060,7 +1134,8 @@
       "combien"
     ],
     "fr_main": "comment",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 94,
@@ -1103,7 +1178,8 @@
       "pouvoir"
     ],
     "fr_main": "pouvoir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 98,
@@ -1114,7 +1190,8 @@
       "là"
     ],
     "fr_main": "ici",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 99,
@@ -1126,7 +1203,8 @@
       "plusieurs"
     ],
     "fr_main": "beaucoup de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 100,
@@ -1137,7 +1215,8 @@
       "pareil"
     ],
     "fr_main": "tel",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 101,
@@ -1148,7 +1227,8 @@
       "passé"
     ],
     "fr_main": "dernier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 102,
@@ -1158,7 +1238,8 @@
       "enfant"
     ],
     "fr_main": "enfant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 103,
@@ -1180,7 +1261,8 @@
       "réellement"
     ],
     "fr_main": "vraiment",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 105,
@@ -1202,7 +1284,8 @@
       "avant"
     ],
     "fr_main": "avant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 107,
@@ -1214,7 +1297,8 @@
       "compagnie"
     ],
     "fr_main": "entreprise",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 108,
@@ -1226,7 +1310,8 @@
       "pendant"
     ],
     "fr_main": "à travers",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 109,
@@ -1237,7 +1322,8 @@
       "vers le bas"
     ],
     "fr_main": "en bas",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 110,
@@ -1260,7 +1346,8 @@
       "existence"
     ],
     "fr_main": "vie",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 112,
@@ -1270,7 +1357,8 @@
       "homme"
     ],
     "fr_main": "homme",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 113,
@@ -1293,7 +1381,8 @@
       "place"
     ],
     "fr_main": "endroit",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 115,
@@ -1314,7 +1403,8 @@
       "parmi"
     ],
     "fr_main": "entre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 117,
@@ -1338,7 +1428,8 @@
       "également"
     ],
     "fr_main": "trop",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 119,
@@ -1360,7 +1451,8 @@
       "souci"
     ],
     "fr_main": "problème",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 121,
@@ -1371,7 +1463,8 @@
       "rédiger"
     ],
     "fr_main": "écrire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 122,
@@ -1382,19 +1475,22 @@
       "identique"
     ],
     "fr_main": "même",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 123,
     "en": "lot",
     "pos": "noun",
     "fr": [
-      "tas",
       "quantité",
+      "beaucoup",
+      "tas",
       "lot"
     ],
-    "fr_main": "tas",
-    "checked": false
+    "fr_main": "quantité",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 124,
@@ -1406,7 +1502,8 @@
       "génial"
     ],
     "fr_main": "grand",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 125,
@@ -1441,7 +1538,8 @@
       "chiffre"
     ],
     "fr_main": "nombre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 128,
@@ -1452,17 +1550,21 @@
       "tous les deux"
     ],
     "fr_main": "les deux",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 129,
     "en": "own",
     "pos": "adj",
     "fr": [
-      "propre"
+      "à soi",
+      "propre",
+      "personnel"
     ],
-    "fr_main": "propre",
-    "checked": false
+    "fr_main": "à soi",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 130,
@@ -1474,7 +1576,8 @@
       "rôle"
     ],
     "fr_main": "partie",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 131,
@@ -1497,7 +1600,8 @@
       "faible"
     ],
     "fr_main": "petit",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 133,
@@ -1508,7 +1612,8 @@
       "secourir"
     ],
     "fr_main": "aider",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 134,
@@ -1532,7 +1637,8 @@
       "retrouver"
     ],
     "fr_main": "rencontrer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 136,
@@ -1555,7 +1661,8 @@
       "converser"
     ],
     "fr_main": "parler",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 138,
@@ -1565,7 +1672,8 @@
       "quelque chose"
     ],
     "fr_main": "quelque chose",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 139,
@@ -1588,7 +1696,8 @@
       "autre"
     ],
     "fr_main": "un autre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 141,
@@ -1598,7 +1707,8 @@
       "devenir"
     ],
     "fr_main": "devenir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 142,
@@ -1621,7 +1731,8 @@
       "nation"
     ],
     "fr_main": "pays",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 144,
@@ -1633,7 +1744,8 @@
       "âgé"
     ],
     "fr_main": "vieux",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 145,
@@ -1643,7 +1755,8 @@
       "chaque"
     ],
     "fr_main": "chaque",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 146,
@@ -1654,7 +1767,8 @@
       "établissement"
     ],
     "fr_main": "école",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 147,
@@ -1665,7 +1779,8 @@
       "tardif"
     ],
     "fr_main": "en retard",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 148,
@@ -1688,18 +1803,22 @@
       "autre"
     ],
     "fr_main": "différent",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 150,
     "en": "off",
     "pos": "adv",
     "fr": [
-      "loin",
-      "à distance"
+      "éteint",
+      "coupé",
+      "parti",
+      "loin"
     ],
-    "fr_main": "loin",
-    "checked": false
+    "fr_main": "éteint",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 151,
@@ -1710,7 +1829,8 @@
       "suivant"
     ],
     "fr_main": "prochain",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 152,
@@ -1722,7 +1842,8 @@
       "extrémité"
     ],
     "fr_main": "fin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 153,
@@ -1744,7 +1865,8 @@
       "pourquoi"
     ],
     "fr_main": "pourquoi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 155,
@@ -1756,7 +1878,8 @@
       "alors que"
     ],
     "fr_main": "pendant que",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 156,
@@ -1777,7 +1900,8 @@
       "semaine"
     ],
     "fr_main": "semaine",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 158,
@@ -1800,7 +1924,8 @@
       "pouvoir"
     ],
     "fr_main": "pourrait",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 160,
@@ -1811,7 +1936,8 @@
       "falloir"
     ],
     "fr_main": "devoir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 161,
@@ -1823,7 +1949,8 @@
       "domicile"
     ],
     "fr_main": "maison",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 162,
@@ -1833,7 +1960,8 @@
       "jamais"
     ],
     "fr_main": "jamais",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 163,
@@ -1845,7 +1973,8 @@
       "comporter"
     ],
     "fr_main": "inclure",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 164,
@@ -1856,7 +1985,8 @@
       "parcours"
     ],
     "fr_main": "cours",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 165,
@@ -1879,7 +2009,8 @@
       "reportage"
     ],
     "fr_main": "rapport",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 167,
@@ -1890,7 +2021,8 @@
       "ensemble"
     ],
     "fr_main": "groupe",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 168,
@@ -1911,7 +2043,8 @@
       "femme"
     ],
     "fr_main": "femme",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 170,
@@ -1922,7 +2055,8 @@
       "vers"
     ],
     "fr_main": "autour de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 171,
@@ -1933,7 +2067,8 @@
       "ouvrage"
     ],
     "fr_main": "livre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 172,
@@ -1943,7 +2078,8 @@
       "famille"
     ],
     "fr_main": "famille",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 173,
@@ -1954,7 +2090,8 @@
       "paraître"
     ],
     "fr_main": "sembler",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 174,
@@ -1965,7 +2102,8 @@
       "permettre"
     ],
     "fr_main": "laisser",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 175,
@@ -1977,7 +2115,8 @@
       "à nouveau"
     ],
     "fr_main": "encore",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 176,
@@ -2011,7 +2150,8 @@
       "entendre"
     ],
     "fr_main": "entendre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 179,
@@ -2021,7 +2161,8 @@
       "système"
     ],
     "fr_main": "système",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 180,
@@ -2032,7 +2173,8 @@
       "tous les"
     ],
     "fr_main": "chaque",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 181,
@@ -2043,7 +2185,8 @@
       "interrogation"
     ],
     "fr_main": "question",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 182,
@@ -2054,7 +2197,8 @@
       "durant"
     ],
     "fr_main": "pendant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 183,
@@ -2064,7 +2208,8 @@
       "toujours"
     ],
     "fr_main": "toujours",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 184,
@@ -2110,7 +2255,8 @@
       "examiner"
     ],
     "fr_main": "étudier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 188,
@@ -2121,7 +2267,8 @@
       "respecter"
     ],
     "fr_main": "suivre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 189,
@@ -2143,7 +2290,8 @@
       "majeur"
     ],
     "fr_main": "important",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 191,
@@ -2154,7 +2302,8 @@
       "depuis que"
     ],
     "fr_main": "puisque",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 192,
@@ -2177,7 +2326,8 @@
       "en dessous de"
     ],
     "fr_main": "sous",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 194,
@@ -2199,7 +2349,8 @@
       "quelques"
     ],
     "fr_main": "peu de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 196,
@@ -2233,7 +2384,8 @@
       "main"
     ],
     "fr_main": "main",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 199,
@@ -2267,7 +2419,8 @@
       "monnaie"
     ],
     "fr_main": "argent",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 202,
@@ -2278,7 +2431,8 @@
       "réalité"
     ],
     "fr_main": "fait",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 203,
@@ -2290,7 +2444,8 @@
       "pourtant"
     ],
     "fr_main": "cependant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 204,
@@ -2302,7 +2457,8 @@
       "domaine"
     ],
     "fr_main": "zone",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 205,
@@ -2314,7 +2470,8 @@
       "offrir"
     ],
     "fr_main": "fournir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 206,
@@ -2325,7 +2482,8 @@
       "prénom"
     ],
     "fr_main": "nom",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 207,
@@ -2335,7 +2493,8 @@
       "lire"
     ],
     "fr_main": "lire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 208,
@@ -2346,7 +2505,8 @@
       "copain"
     ],
     "fr_main": "ami",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 209,
@@ -2356,7 +2516,8 @@
       "mois"
     ],
     "fr_main": "mois",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 210,
@@ -2380,7 +2541,8 @@
       "commerce"
     ],
     "fr_main": "entreprise",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 212,
@@ -2390,7 +2552,8 @@
       "sans"
     ],
     "fr_main": "sans",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 213,
@@ -2401,7 +2564,8 @@
       "renseignement"
     ],
     "fr_main": "information",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 214,
@@ -2432,7 +2596,8 @@
       "gouvernement"
     ],
     "fr_main": "gouvernement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 217,
@@ -2443,7 +2608,8 @@
       "parole"
     ],
     "fr_main": "mot",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 218,
@@ -2455,7 +2621,8 @@
       "numéro"
     ],
     "fr_main": "problème",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 219,
@@ -2465,7 +2632,8 @@
       "marché"
     ],
     "fr_main": "marché",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 220,
@@ -2476,7 +2644,8 @@
       "verser"
     ],
     "fr_main": "payer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 221,
@@ -2510,7 +2679,8 @@
       "prestation"
     ],
     "fr_main": "service",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 224,
@@ -2520,7 +2690,8 @@
       "contre"
     ],
     "fr_main": "contre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 225,
@@ -2532,7 +2703,8 @@
       "estimer"
     ],
     "fr_main": "croire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 226,
@@ -2543,7 +2715,8 @@
       "second"
     ],
     "fr_main": "deuxième",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 227,
@@ -2555,7 +2728,8 @@
       "quoique"
     ],
     "fr_main": "bien que",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 228,
@@ -2565,7 +2739,8 @@
       "oui"
     ],
     "fr_main": "oui",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 229,
@@ -2576,7 +2751,8 @@
       "adorer"
     ],
     "fr_main": "aimer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 230,
@@ -2587,7 +2763,8 @@
       "accroître"
     ],
     "fr_main": "augmenter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 231,
@@ -2599,7 +2776,8 @@
       "poste"
     ],
     "fr_main": "emploi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 232,
@@ -2610,7 +2788,8 @@
       "projet"
     ],
     "fr_main": "plan",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 233,
@@ -2621,7 +2800,8 @@
       "conséquence"
     ],
     "fr_main": "résultat",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 234,
@@ -2632,7 +2812,8 @@
       "au loin"
     ],
     "fr_main": "loin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 235,
@@ -2642,7 +2823,8 @@
       "exemple"
     ],
     "fr_main": "exemple",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 236,
@@ -2654,7 +2836,8 @@
       "se produire"
     ],
     "fr_main": "se passer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 237,
@@ -2665,7 +2848,8 @@
       "proposer"
     ],
     "fr_main": "offrir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 238,
@@ -2675,7 +2859,8 @@
       "jeune"
     ],
     "fr_main": "jeune",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 239,
@@ -2697,7 +2882,8 @@
       "émission"
     ],
     "fr_main": "programme",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 241,
@@ -2709,7 +2895,8 @@
       "conduire"
     ],
     "fr_main": "mener",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 242,
@@ -2719,7 +2906,8 @@
       "acheter"
     ],
     "fr_main": "acheter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 243,
@@ -2730,7 +2918,8 @@
       "saisir"
     ],
     "fr_main": "comprendre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 244,
@@ -2740,7 +2929,8 @@
       "remercier"
     ],
     "fr_main": "remercier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 245,
@@ -2751,7 +2941,8 @@
       "de loin"
     ],
     "fr_main": "loin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 246,
@@ -2761,7 +2952,8 @@
       "aujourd'hui"
     ],
     "fr_main": "aujourd'hui",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 247,
@@ -2771,7 +2963,8 @@
       "heure"
     ],
     "fr_main": "heure",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 248,
@@ -2782,7 +2975,8 @@
       "élève"
     ],
     "fr_main": "étudiant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 249,
@@ -2793,7 +2987,8 @@
       "face"
     ],
     "fr_main": "visage",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 250,
@@ -2803,7 +2998,8 @@
       "espérer"
     ],
     "fr_main": "espérer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 251,
@@ -2813,7 +3009,8 @@
       "idée"
     ],
     "fr_main": "idée",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 252,
@@ -2824,7 +3021,8 @@
       "prix"
     ],
     "fr_main": "coût",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 253,
@@ -2834,7 +3032,8 @@
       "moins"
     ],
     "fr_main": "moins",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 254,
@@ -2846,7 +3045,8 @@
       "salle"
     ],
     "fr_main": "pièce",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 255,
@@ -2856,7 +3056,8 @@
       "jusqu'à"
     ],
     "fr_main": "jusqu'à",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 256,
@@ -2867,7 +3068,8 @@
       "motif"
     ],
     "fr_main": "raison",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 257,
@@ -2878,7 +3080,8 @@
       "formulaire"
     ],
     "fr_main": "forme",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 258,
@@ -2889,7 +3092,8 @@
       "passer"
     ],
     "fr_main": "dépenser",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 259,
@@ -2911,7 +3115,8 @@
       "automobile"
     ],
     "fr_main": "voiture",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 261,
@@ -2932,7 +3137,8 @@
       "niveau"
     ],
     "fr_main": "niveau",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 263,
@@ -2943,7 +3149,8 @@
       "individu"
     ],
     "fr_main": "personne",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 264,
@@ -2953,7 +3160,8 @@
       "expérience"
     ],
     "fr_main": "expérience",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 265,
@@ -2964,7 +3172,8 @@
       "autrefois"
     ],
     "fr_main": "une fois",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 266,
@@ -2974,7 +3183,8 @@
       "membre"
     ],
     "fr_main": "membre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 267,
@@ -2985,7 +3195,8 @@
       "suffisamment"
     ],
     "fr_main": "assez",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 268,
@@ -2996,7 +3207,8 @@
       "méchant"
     ],
     "fr_main": "mauvais",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 269,
@@ -3007,7 +3219,8 @@
       "cité"
     ],
     "fr_main": "ville",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 270,
@@ -3018,7 +3231,8 @@
       "soir"
     ],
     "fr_main": "nuit",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 271,
@@ -3028,7 +3242,8 @@
       "capable"
     ],
     "fr_main": "capable",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 272,
@@ -3039,7 +3254,8 @@
       "appui"
     ],
     "fr_main": "soutien",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 273,
@@ -3049,7 +3265,8 @@
       "si"
     ],
     "fr_main": "si",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 274,
@@ -3082,7 +3299,8 @@
       "bord"
     ],
     "fr_main": "côté",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 277,
@@ -3094,7 +3312,8 @@
       "plutôt"
     ],
     "fr_main": "assez",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 278,
@@ -3105,7 +3324,8 @@
       "quoique"
     ],
     "fr_main": "bien que",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 279,
@@ -3116,7 +3336,8 @@
       "certain"
     ],
     "fr_main": "sûr",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 280,
@@ -3128,7 +3349,8 @@
       "mandat"
     ],
     "fr_main": "terme",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 281,
@@ -3139,7 +3361,8 @@
       "au moins"
     ],
     "fr_main": "le moins",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 282,
@@ -3150,7 +3373,8 @@
       "époque"
     ],
     "fr_main": "âge",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 283,
@@ -3161,7 +3385,8 @@
       "faible"
     ],
     "fr_main": "bas",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 284,
@@ -3171,19 +3396,21 @@
       "parler"
     ],
     "fr_main": "parler",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 285,
     "en": "within",
     "pos": "prep",
     "fr": [
-      "à l'intérieur de",
       "au sein de",
+      "à l'intérieur de",
       "en moins de"
     ],
-    "fr_main": "à l'intérieur de",
-    "checked": false
+    "fr_main": "au sein de",
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 286,
@@ -3194,7 +3421,8 @@
       "procédé"
     ],
     "fr_main": "processus",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 287,
@@ -3204,7 +3432,8 @@
       "public"
     ],
     "fr_main": "public",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 288,
@@ -3214,7 +3443,8 @@
       "souvent"
     ],
     "fr_main": "souvent",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 289,
@@ -3224,7 +3454,8 @@
       "train"
     ],
     "fr_main": "train",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 290,
@@ -3234,7 +3465,8 @@
       "possible"
     ],
     "fr_main": "possible",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 291,
@@ -3246,7 +3478,8 @@
       "véritablement"
     ],
     "fr_main": "en fait",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 292,
@@ -3256,7 +3489,8 @@
       "plutôt"
     ],
     "fr_main": "plutôt",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 293,
@@ -3268,7 +3502,8 @@
       "opinion"
     ],
     "fr_main": "vue",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 294,
@@ -3278,7 +3513,8 @@
       "ensemble"
     ],
     "fr_main": "ensemble",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 295,
@@ -3290,7 +3526,8 @@
       "réfléchir à"
     ],
     "fr_main": "considérer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 296,
@@ -3301,7 +3538,8 @@
       "tarif"
     ],
     "fr_main": "prix",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 297,
@@ -3311,7 +3549,8 @@
       "parent"
     ],
     "fr_main": "parent",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 298,
@@ -3334,7 +3573,8 @@
       "soirée"
     ],
     "fr_main": "fête",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 300,
@@ -3344,7 +3584,8 @@
       "local"
     ],
     "fr_main": "local",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 301,
@@ -3355,7 +3596,8 @@
       "maîtrise"
     ],
     "fr_main": "contrôle",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 302,
@@ -3365,7 +3607,8 @@
       "déjà"
     ],
     "fr_main": "déjà",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 303,
@@ -3377,7 +3620,8 @@
       "souci"
     ],
     "fr_main": "préoccupation",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 304,
@@ -3387,7 +3631,8 @@
       "produit"
     ],
     "fr_main": "produit",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 305,
@@ -3397,7 +3642,8 @@
       "perdre"
     ],
     "fr_main": "perdre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 306,
@@ -3419,7 +3665,8 @@
       "quasi"
     ],
     "fr_main": "presque",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 308,
@@ -3430,7 +3677,8 @@
       "poursuivre"
     ],
     "fr_main": "continuer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 309,
@@ -3455,7 +3703,8 @@
       "total"
     ],
     "fr_main": "entier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 311,
@@ -3463,10 +3712,12 @@
     "pos": "adv",
     "fr": [
       "encore",
-      "déjà"
+      "déjà",
+      "pourtant"
     ],
     "fr_main": "encore",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 312,
@@ -3478,7 +3729,8 @@
       "tarif"
     ],
     "fr_main": "taux",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 313,
@@ -3489,7 +3741,8 @@
       "attention"
     ],
     "fr_main": "soin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 314,
@@ -3501,7 +3754,8 @@
       "prévoir"
     ],
     "fr_main": "s'attendre à",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 315,
@@ -3512,7 +3766,8 @@
       "conséquence"
     ],
     "fr_main": "effet",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 316,
@@ -3524,7 +3779,8 @@
       "type"
     ],
     "fr_main": "sorte",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 317,
@@ -3536,7 +3792,8 @@
       "toujours"
     ],
     "fr_main": "jamais",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 318,
@@ -3548,7 +3805,8 @@
       "rien"
     ],
     "fr_main": "n'importe quoi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 319,
@@ -3560,7 +3818,8 @@
       "entraîner"
     ],
     "fr_main": "causer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 320,
@@ -3572,7 +3831,8 @@
       "baisser"
     ],
     "fr_main": "tomber",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 321,
@@ -3584,7 +3844,8 @@
       "marché"
     ],
     "fr_main": "accord",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 322,
@@ -3606,7 +3867,8 @@
       "transmettre"
     ],
     "fr_main": "envoyer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 324,
@@ -3618,7 +3880,8 @@
       "laisser"
     ],
     "fr_main": "permettre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 325,
@@ -3630,7 +3893,8 @@
       "rapidement"
     ],
     "fr_main": "bientôt",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 326,
@@ -3654,7 +3918,8 @@
       "socle"
     ],
     "fr_main": "base",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 328,
@@ -3665,7 +3930,8 @@
       "sans doute"
     ],
     "fr_main": "probablement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 329,
@@ -3677,7 +3943,8 @@
       "conseiller"
     ],
     "fr_main": "suggérer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 330,
@@ -3687,7 +3954,8 @@
       "passé"
     ],
     "fr_main": "passé",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 331,
@@ -3711,7 +3979,8 @@
       "examen"
     ],
     "fr_main": "test",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 333,
@@ -3722,7 +3991,8 @@
       "rendre visite"
     ],
     "fr_main": "visiter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 334,
@@ -3733,7 +4003,8 @@
       "milieu"
     ],
     "fr_main": "centre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 335,
@@ -3745,7 +4016,8 @@
       "croître"
     ],
     "fr_main": "grandir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 336,
@@ -3755,7 +4027,8 @@
       "rien"
     ],
     "fr_main": "rien",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 337,
@@ -3767,7 +4040,8 @@
       "rendre"
     ],
     "fr_main": "revenir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 338,
@@ -3778,7 +4052,8 @@
       "maman"
     ],
     "fr_main": "mère",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 339,
@@ -3789,7 +4064,8 @@
       "se promener"
     ],
     "fr_main": "marcher",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 340,
@@ -3814,7 +4090,8 @@
       "avis"
     ],
     "fr_main": "esprit",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 342,
@@ -3826,7 +4103,8 @@
       "intérêt"
     ],
     "fr_main": "valeur",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 343,
@@ -3838,7 +4116,8 @@
       "fonction"
     ],
     "fr_main": "bureau",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 344,
@@ -3850,7 +4129,8 @@
       "dossier"
     ],
     "fr_main": "enregistrement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 345,
@@ -3862,7 +4142,8 @@
       "demeurer"
     ],
     "fr_main": "rester",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 346,
@@ -3874,7 +4155,8 @@
       "vigueur"
     ],
     "fr_main": "force",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 347,
@@ -3886,7 +4168,8 @@
       "stopper"
     ],
     "fr_main": "arrêter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 348,
@@ -3898,7 +4181,8 @@
       "quelques"
     ],
     "fr_main": "plusieurs",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 349,
@@ -3922,7 +4206,8 @@
       "créer"
     ],
     "fr_main": "développer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 351,
@@ -3934,7 +4219,8 @@
       "retenir"
     ],
     "fr_main": "se souvenir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 352,
@@ -3946,7 +4232,8 @@
       "peu"
     ],
     "fr_main": "morceau",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 353,
@@ -3958,7 +4245,8 @@
       "répartir"
     ],
     "fr_main": "partager",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 354,
@@ -3970,7 +4258,8 @@
       "véritable"
     ],
     "fr_main": "réel",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 355,
@@ -3981,7 +4270,8 @@
       "solution"
     ],
     "fr_main": "réponse",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 356,
@@ -3993,7 +4283,8 @@
       "siéger"
     ],
     "fr_main": "s'asseoir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 357,
@@ -4017,7 +4308,8 @@
       "caractère"
     ],
     "fr_main": "lettre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 359,
@@ -4029,7 +4321,8 @@
       "trancher"
     ],
     "fr_main": "décider",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 360,
@@ -4040,7 +4333,8 @@
       "langage"
     ],
     "fr_main": "langue",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 361,
@@ -4064,7 +4358,8 @@
       "catégorie"
     ],
     "fr_main": "classe",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 363,
@@ -4076,7 +4371,8 @@
       "essor"
     ],
     "fr_main": "développement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 364,
@@ -4088,7 +4384,8 @@
       "commune"
     ],
     "fr_main": "ville",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 365,
@@ -4099,7 +4396,8 @@
       "demi"
     ],
     "fr_main": "moitié",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 366,
@@ -4111,7 +4409,8 @@
       "procès-verbal"
     ],
     "fr_main": "minute",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 367,
@@ -4123,7 +4422,8 @@
       "aliment"
     ],
     "fr_main": "nourriture",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 368,
@@ -4135,7 +4435,8 @@
       "rompre"
     ],
     "fr_main": "casser",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 369,
@@ -4158,7 +4459,8 @@
       "futur"
     ],
     "fr_main": "avenir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 371,
@@ -4169,7 +4471,8 @@
       "ou bien"
     ],
     "fr_main": "soit",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 372,
@@ -4180,7 +4483,8 @@
       "auparavant"
     ],
     "fr_main": "il y a",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 373,
@@ -4192,7 +4496,8 @@
       "selon"
     ],
     "fr_main": "par",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 374,
@@ -4204,7 +4509,8 @@
       "subsister"
     ],
     "fr_main": "rester",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 375,
@@ -4216,7 +4522,8 @@
       "dessus"
     ],
     "fr_main": "sommet",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 376,
@@ -4228,7 +4535,8 @@
       "au milieu de"
     ],
     "fr_main": "parmi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 377,
@@ -4240,7 +4548,8 @@
       "vaincre"
     ],
     "fr_main": "gagner",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 378,
@@ -4252,7 +4561,8 @@
       "coloris"
     ],
     "fr_main": "couleur",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 379,
@@ -4264,7 +4574,8 @@
       "comporter"
     ],
     "fr_main": "impliquer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 380,
@@ -4276,7 +4587,8 @@
       "parvenir à"
     ],
     "fr_main": "atteindre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 381,
@@ -4287,7 +4599,8 @@
       "sociable"
     ],
     "fr_main": "social",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 382,
@@ -4299,7 +4612,8 @@
       "point"
     ],
     "fr_main": "période",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 383,
@@ -4311,7 +4625,8 @@
       "en travers de"
     ],
     "fr_main": "à travers",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 384,
@@ -4323,7 +4638,8 @@
       "billet"
     ],
     "fr_main": "note",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 385,
@@ -4335,7 +4651,8 @@
       "historique"
     ],
     "fr_main": "histoire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 386,
@@ -4347,7 +4664,8 @@
       "produire"
     ],
     "fr_main": "créer",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 387,
@@ -4359,7 +4677,8 @@
       "pousser"
     ],
     "fr_main": "conduire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 388,
@@ -4370,7 +4689,8 @@
       "au fil de"
     ],
     "fr_main": "le long de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 389,
@@ -4382,7 +4702,8 @@
       "sorte"
     ],
     "fr_main": "type",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 390,
@@ -4405,7 +4726,8 @@
       "regard"
     ],
     "fr_main": "œil",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 392,
@@ -4415,7 +4737,8 @@
       "musique"
     ],
     "fr_main": "musique",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 393,
@@ -4427,7 +4750,8 @@
       "match"
     ],
     "fr_main": "jeu",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 394,
@@ -4437,7 +4761,8 @@
       "politique"
     ],
     "fr_main": "politique",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 395,
@@ -4461,7 +4786,8 @@
       "accueillir"
     ],
     "fr_main": "recevoir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 397,
@@ -4472,7 +4798,8 @@
       "instant"
     ],
     "fr_main": "moment",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 398,
@@ -4483,7 +4810,8 @@
       "solde"
     ],
     "fr_main": "vente",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 399,
@@ -4494,7 +4822,8 @@
       "règlement"
     ],
     "fr_main": "politique",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 400,
@@ -4505,7 +4834,8 @@
       "davantage"
     ],
     "fr_main": "plus loin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 401,
@@ -4516,7 +4846,8 @@
       "organisme"
     ],
     "fr_main": "corps",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 402,
@@ -4528,7 +4859,8 @@
       "demander"
     ],
     "fr_main": "exiger",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 403,
@@ -4539,7 +4871,8 @@
       "patienter"
     ],
     "fr_main": "attendre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 404,
@@ -4550,7 +4883,8 @@
       "courant"
     ],
     "fr_main": "général",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 405,
@@ -4562,7 +4896,8 @@
       "sembler"
     ],
     "fr_main": "apparaître",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 406,
@@ -4573,7 +4908,8 @@
       "envers"
     ],
     "fr_main": "vers",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 407,
@@ -4584,7 +4920,8 @@
       "groupe"
     ],
     "fr_main": "équipe",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 408,
@@ -4596,7 +4933,8 @@
       "aisé"
     ],
     "fr_main": "facile",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 409,
@@ -4607,7 +4945,8 @@
       "particulier"
     ],
     "fr_main": "individuel",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 410,
@@ -4619,7 +4958,8 @@
       "entier"
     ],
     "fr_main": "plein",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 411,
@@ -4630,7 +4970,8 @@
       "sombre"
     ],
     "fr_main": "noir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 412,
@@ -4642,7 +4983,8 @@
       "bon sens"
     ],
     "fr_main": "sens",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 413,
@@ -4653,7 +4995,8 @@
       "sans doute"
     ],
     "fr_main": "peut-être",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 414,
@@ -4665,7 +5008,8 @@
       "compléter"
     ],
     "fr_main": "ajouter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 415,
@@ -4677,7 +5021,8 @@
       "loi"
     ],
     "fr_main": "règle",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 416,
@@ -4701,7 +5046,8 @@
       "donner"
     ],
     "fr_main": "produire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 418,
@@ -4712,7 +5058,8 @@
       "céder"
     ],
     "fr_main": "vendre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 419,
@@ -4735,7 +5082,8 @@
       "convenir"
     ],
     "fr_main": "être d'accord",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 421,
@@ -4746,7 +5094,8 @@
       "droit"
     ],
     "fr_main": "loi",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 422,
@@ -4757,7 +5106,8 @@
       "toute chose"
     ],
     "fr_main": "tout",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 423,
@@ -4768,7 +5118,8 @@
       "étude"
     ],
     "fr_main": "recherche",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 424,
@@ -4780,7 +5131,8 @@
       "aborder"
     ],
     "fr_main": "couvrir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 425,
@@ -4792,7 +5144,8 @@
       "article"
     ],
     "fr_main": "papier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 426,
@@ -4804,7 +5157,8 @@
       "situation"
     ],
     "fr_main": "position",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 427,
@@ -4815,7 +5169,8 @@
       "proche de"
     ],
     "fr_main": "près de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 428,
@@ -4825,7 +5180,8 @@
       "humain"
     ],
     "fr_main": "humain",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 429,
@@ -4835,7 +5191,8 @@
       "ordinateur"
     ],
     "fr_main": "ordinateur",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 430,
@@ -4847,7 +5204,8 @@
       "contexte"
     ],
     "fr_main": "situation",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 431,
@@ -4858,7 +5216,8 @@
       "équipe"
     ],
     "fr_main": "personnel",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 432,
@@ -4869,7 +5228,8 @@
       "occupation"
     ],
     "fr_main": "activité",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 433,
@@ -4880,7 +5240,8 @@
       "pellicule"
     ],
     "fr_main": "film",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 434,
@@ -4891,7 +5252,8 @@
       "matinée"
     ],
     "fr_main": "matin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 435,
@@ -4902,7 +5264,8 @@
       "conflit"
     ],
     "fr_main": "guerre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 436,
@@ -4914,7 +5277,8 @@
       "explication"
     ],
     "fr_main": "compte",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 437,
@@ -4926,7 +5290,8 @@
       "atelier"
     ],
     "fr_main": "magasin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 438,
@@ -4938,7 +5303,8 @@
       "important"
     ],
     "fr_main": "majeur",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 439,
@@ -4948,7 +5314,8 @@
       "quelqu'un"
     ],
     "fr_main": "quelqu'un",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 440,
@@ -4959,7 +5326,8 @@
       "par-dessus"
     ],
     "fr_main": "au-dessus de",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 441,
@@ -4971,7 +5339,8 @@
       "modèle"
     ],
     "fr_main": "conception",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 442,
@@ -4982,7 +5351,8 @@
       "manifestation"
     ],
     "fr_main": "événement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 443,
@@ -4993,7 +5363,8 @@
       "particulier"
     ],
     "fr_main": "spécial",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 444,
@@ -5004,7 +5375,8 @@
       "quelquefois"
     ],
     "fr_main": "parfois",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 445,
@@ -5015,7 +5387,8 @@
       "état"
     ],
     "fr_main": "condition",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 446,
@@ -5027,7 +5400,8 @@
       "mener"
     ],
     "fr_main": "porter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 447,
@@ -5039,7 +5413,8 @@
       "élire"
     ],
     "fr_main": "choisir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 448,
@@ -5050,7 +5425,8 @@
       "papa"
     ],
     "fr_main": "père",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 449,
@@ -5061,7 +5437,8 @@
       "choix"
     ],
     "fr_main": "décision",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 450,
@@ -5072,7 +5449,8 @@
       "tableau"
     ],
     "fr_main": "table",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 451,
@@ -5083,7 +5461,8 @@
       "sûr"
     ],
     "fr_main": "certain",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 452,
@@ -5094,7 +5473,8 @@
       "vers l'avant"
     ],
     "fr_main": "en avant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 453,
@@ -5106,7 +5486,8 @@
       "majeur"
     ],
     "fr_main": "principal",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 454,
@@ -5118,7 +5499,8 @@
       "s'éteindre"
     ],
     "fr_main": "mourir",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 455,
@@ -5142,7 +5524,8 @@
       "tailler"
     ],
     "fr_main": "couper",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 457,
@@ -5153,7 +5536,8 @@
       "représenter"
     ],
     "fr_main": "décrire",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 458,
@@ -5164,7 +5548,8 @@
       "se"
     ],
     "fr_main": "lui-même",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 459,
@@ -5176,7 +5561,8 @@
       "libre"
     ],
     "fr_main": "disponible",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 460,
@@ -5188,7 +5574,8 @@
       "notamment"
     ],
     "fr_main": "surtout",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 461,
@@ -5212,7 +5599,8 @@
       "s'élever"
     ],
     "fr_main": "monter",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 463,
@@ -5223,7 +5611,8 @@
       "jeune fille"
     ],
     "fr_main": "fille",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 464,
@@ -5233,7 +5622,8 @@
       "peut-être"
     ],
     "fr_main": "peut-être",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 465,
@@ -5244,7 +5634,8 @@
       "collectivité"
     ],
     "fr_main": "communauté",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 466,
@@ -5256,7 +5647,8 @@
       "d'autre"
     ],
     "fr_main": "autrement",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 467,
@@ -5268,7 +5660,8 @@
       "spécifique"
     ],
     "fr_main": "particulier",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 468,
@@ -5279,7 +5672,8 @@
       "fonction"
     ],
     "fr_main": "rôle",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 469,
@@ -5291,7 +5685,8 @@
       "participer à"
     ],
     "fr_main": "rejoindre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 470,
@@ -5303,7 +5698,8 @@
       "compliqué"
     ],
     "fr_main": "difficile",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 471,
@@ -5314,7 +5710,8 @@
       "s'il te plaît"
     ],
     "fr_main": "s'il vous plaît",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 472,
@@ -5325,7 +5722,8 @@
       "précision"
     ],
     "fr_main": "détail",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 473,
@@ -5336,7 +5734,8 @@
       "écart"
     ],
     "fr_main": "différence",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 474,
@@ -5348,7 +5747,8 @@
       "acte"
     ],
     "fr_main": "action",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 475,
@@ -5358,7 +5758,8 @@
       "santé"
     ],
     "fr_main": "santé",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 476,
@@ -5368,7 +5769,8 @@
       "manger"
     ],
     "fr_main": "manger",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 477,
@@ -5380,11 +5782,12 @@
       "marche"
     ],
     "fr_main": "pas",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 478,
-    "en": "TRUE",
+    "en": "true",
     "pos": "adj",
     "fr": [
       "vrai",
@@ -5392,7 +5795,8 @@
       "fidèle"
     ],
     "fr_main": "vrai",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 479,
@@ -5402,7 +5806,8 @@
       "téléphone"
     ],
     "fr_main": "téléphone",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 480,
@@ -5414,7 +5819,8 @@
       "se"
     ],
     "fr_main": "eux-mêmes",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 481,
@@ -5426,7 +5832,8 @@
       "attirer"
     ],
     "fr_main": "dessiner",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 482,
@@ -5436,7 +5843,8 @@
       "blanc"
     ],
     "fr_main": "blanc",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 483,
@@ -5447,7 +5855,8 @@
       "rendez-vous"
     ],
     "fr_main": "date",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 484,
@@ -5459,7 +5868,8 @@
       "entraînement"
     ],
     "fr_main": "pratique",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 485,
@@ -5471,7 +5881,8 @@
       "maquette"
     ],
     "fr_main": "modèle",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 486,
@@ -5483,7 +5894,8 @@
       "élever"
     ],
     "fr_main": "lever",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 487,
@@ -5494,7 +5906,8 @@
       "cliente"
     ],
     "fr_main": "client",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 488,
@@ -5506,7 +5919,8 @@
       "façade"
     ],
     "fr_main": "avant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 489,
@@ -5527,7 +5941,8 @@
       "porte"
     ],
     "fr_main": "porte",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 491,
@@ -5538,7 +5953,8 @@
       "à l'extérieur"
     ],
     "fr_main": "dehors",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 492,
@@ -5549,7 +5965,8 @@
       "après"
     ],
     "fr_main": "derrière",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 493,
@@ -5559,7 +5976,8 @@
       "économique"
     ],
     "fr_main": "économique",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 494,
@@ -5571,7 +5989,8 @@
       "lieu"
     ],
     "fr_main": "site",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 495,
@@ -5583,7 +6002,8 @@
       "s'approcher"
     ],
     "fr_main": "approcher",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 496,
@@ -5595,7 +6015,8 @@
       "instituteur"
     ],
     "fr_main": "enseignant",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 497,
@@ -5607,7 +6028,8 @@
       "pays"
     ],
     "fr_main": "terre",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 498,
@@ -5630,7 +6052,8 @@
       "finalement"
     ],
     "fr_main": "enfin",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 500,
@@ -5642,7 +6065,8 @@
       "indice"
     ],
     "fr_main": "signe",
-    "checked": false
+    "checked": false,
+    "ai_reviewed": true
   },
   {
     "rank": 501,
