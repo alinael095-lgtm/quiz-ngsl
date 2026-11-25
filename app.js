@@ -46,6 +46,7 @@
     questionArea: document.getElementById("question-area"),
     targetWord: document.getElementById("target-word"),
     posTag: document.getElementById("pos-tag"),
+    masteryIndicator: document.getElementById("mastery-indicator"),
     choicesGrid: document.getElementById("choices-grid"),
     feedbackZone: document.getElementById("feedback-zone"),
     feedbackPlaceholder: document.getElementById("feedback-placeholder"),
@@ -204,6 +205,34 @@
     els.posTag.classList.remove("visible");
     els.posTag.setAttribute("aria-hidden", "true");
     els.posTag.textContent = "";
+    els.masteryIndicator.classList.remove("visible", "is-mastered");
+    els.masteryIndicator.setAttribute("aria-hidden", "true");
+    els.masteryIndicator.innerHTML = "";
+  }
+
+  function renderMasteryIndicator(rank) {
+    const progress = logic.getWordProgress(state, rank);
+    const maxDots = logic.CONFIG.MASTERY_STREAK;
+    const filled = Math.min(progress.streak, maxDots);
+    const mastered = filled >= maxDots;
+
+    els.masteryIndicator.innerHTML = "";
+    const dotsWrap = document.createElement("span");
+    dotsWrap.className = "mastery-dots";
+    for (let i = 0; i < maxDots; i++) {
+      const dot = document.createElement("span");
+      dot.className = i < filled ? "mastery-dot filled" : "mastery-dot";
+      dotsWrap.appendChild(dot);
+    }
+
+    const textSpan = document.createElement("span");
+    textSpan.textContent = mastered ? `${filled}/${maxDots} maîtrisé` : `${filled}/${maxDots}`;
+
+    els.masteryIndicator.appendChild(dotsWrap);
+    els.masteryIndicator.appendChild(textSpan);
+    els.masteryIndicator.classList.toggle("is-mastered", mastered);
+    els.masteryIndicator.classList.add("visible");
+    els.masteryIndicator.setAttribute("aria-hidden", "false");
   }
 
   function renderNextQuestion() {
@@ -336,10 +365,11 @@
     sessionStreak = result.nextSessionStreak;
     saveState();
 
-    // Révéler le pos uniquement après réponse (section 10)
+    // Révéler le pos et l'indicateur de maîtrise uniquement après réponse (section 10)
     els.posTag.textContent = POS_LABELS[target.pos] || target.pos;
     els.posTag.classList.add("visible");
     els.posTag.setAttribute("aria-hidden", "false");
+    renderMasteryIndicator(target.rank);
 
     // Colorer et ajouter les icônes ✓ / ✗ sur les boutons
     const buttons = els.choicesGrid.querySelectorAll(".choice-btn");
