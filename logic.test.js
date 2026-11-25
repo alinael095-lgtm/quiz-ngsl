@@ -59,7 +59,8 @@ test("Normalisation : casse, accents, espaces et parenthèses", () => {
 
 test("Distracteurs EN -> FR : jamais deux réponses valables ni de doublons d'affichage", () => {
   const rng = createSeededRng(42);
-  for (let i = 0; i < 20; i++) {
+  const passes = sampleWords.length > 200 ? 2 : 20;
+  for (let i = 0; i < passes; i++) {
     for (const word of sampleWords) {
       const q = logic.buildQuestion(word, sampleWords, { direction: "en-fr", rng });
       assert.strictEqual(q.choices.length, 4);
@@ -145,20 +146,27 @@ test("Distracteurs FR -> EN : ne garde qu'un seul mot anglais si deux partagent 
 });
 
 test("Distracteurs : priorité au même palier et même pos, avec repli si pas assez de candidats", () => {
-  // Dans le palier 4 (2001-2809), il y a 4 verbes distincts sans recoupement
+  // Un verbe dans un palier disposant d'au moins 4 verbes distincts
   const borrow = sampleWords.find((w) => w.en === "borrow");
+  const expectedTier = logic.getTierIdForRank(borrow.rank);
   const qBorrow = logic.buildQuestion(borrow, sampleWords, {
     direction: "en-fr",
     rng: createSeededRng(5),
   });
   for (const choice of qBorrow.choices) {
-    assert.strictEqual(logic.getTierIdForRank(choice.word.rank), "2001-2809");
+    assert.strictEqual(logic.getTierIdForRank(choice.word.rank), expectedTier);
     assert.strictEqual(choice.word.pos, "verb");
   }
 
-  // 'can' est le seul modal du corpus -> doit quand même produire 4 choix via repli
+  // Repli sur un mini-corpus où le mot cible est seul de son pos
   const can = sampleWords.find((w) => w.en === "can");
-  const qCan = logic.buildQuestion(can, sampleWords, {
+  const miniCorpus = [
+    can,
+    sampleWords.find((w) => w.en === "house"),
+    sampleWords.find((w) => w.en === "world"),
+    sampleWords.find((w) => w.en === "water"),
+  ];
+  const qCan = logic.buildQuestion(can, miniCorpus, {
     direction: "en-fr",
     rng: createSeededRng(5),
   });
@@ -241,18 +249,26 @@ test("Règles de maîtrise et de révision des erreurs", () => {
   assert.strictEqual(res.clearedFromErrors, true);
 });
 
-test("Statistiques calculées sur allWords.length (50 en phase 1, jamais 2 809 en dur)", () => {
+test("Statistiques calculées sur allWords.length (jamais 2 809 codé en dur)", () => {
+  // Sous-ensemble de 50 mots : 5 maîtrisés = 10 %
+  const subset50 = sampleWords.slice(0, 50);
   const state = logic.createInitialState();
-  // Maîtriser 5 mots sur 50 = 10 %
-  for (const w of sampleWords.slice(0, 5)) {
+  for (const w of subset50.slice(0, 5)) {
     state.words[String(w.rank)] = { seen: 3, correct: 3, streak: 3, inErrors: false };
   }
-  const stats = logic.computeStats(sampleWords, state, "1-500");
-  assert.strictEqual(stats.totalWords, 50);
-  assert.strictEqual(stats.masteredGlobalCount, 5);
-  assert.strictEqual(stats.masteredGlobalPercent, 10);
-  assert.strictEqual(stats.tierTotal, 13);
-  assert.strictEqual(stats.masteredTierCount, 5);
+  const statsSubset = logic.computeStats(subset50, state, "1-500");
+  assert.strictEqual(statsSubset.totalWords, 50);
+  assert.strictEqual(statsSubset.masteredGlobalCount, 5);
+  assert.strictEqual(statsSubset.masteredGlobalPercent, 10);
+
+  // Sur le corpus complet courant (2 809 mots en phase 2)
+  const statsFull = logic.computeStats(sampleWords, state, "1-500");
+  assert.strictEqual(statsFull.totalWords, sampleWords.length);
+  assert.strictEqual(statsFull.masteredGlobalCount, 5);
+  assert.strictEqual(
+    statsFull.tierTotal,
+    logic.getWordsForTier(sampleWords, "1-500").length
+  );
 });
 
 test("Persistance et validation de l'import JSON", () => {

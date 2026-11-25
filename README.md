@@ -8,20 +8,18 @@ Aucun serveur ni installation n’est nécessaire :
 1. Ouvrez simplement `index.html` en double-clic dans votre navigateur (protocole `file://`).
 2. Votre progression est sauvegardée localement dans le navigateur (`localStorage`, clé `ngslQuiz.v1`).
 
-*(Note : l’interface `index.html` est implémentée dans l’Issue #3.)*
-
 ## Préparer et valider les données
 
-Le fichier `data/words.js` utilisé par l’application est généré à partir du fichier source `data/ngsl_words.json` grâce au script `prepare_data.py` (Python 3 standard, sans dépendance externe).
+Le fichier `data/words.js` utilisé par l’application est généré à partir du fichier source `data/ngsl_words.json` (lui-même issu de `data/NGSL_12_stats.csv`, 2 809 mots) grâce au script `prepare_data.py` (Python 3 standard, sans dépendance externe).
 
-### Phase 1 (échantillon de 50 mots relus)
-```bash
-python3 prepare_data.py
-```
-
-### Phase 2 (corpus complet de 2 809 mots)
+### Phase 2 (corpus complet de 2 809 mots — actif)
 ```bash
 python3 prepare_data.py --phase 2
+```
+
+### Phase 1 (échantillon de 50 mots)
+```bash
+python3 prepare_data.py --phase 1
 ```
 
 Le script s’arrête en cas d’erreur sans écraser `data/words.js` si une règle de validation échoue (nombre d’entrées, rangs uniques/continus, `pos` autorisé, `fr` non vide, `fr_main` présent dans `fr`, aucun doublon de mot anglais).
