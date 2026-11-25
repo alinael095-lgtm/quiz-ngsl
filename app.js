@@ -178,7 +178,7 @@
 
     // Score & série de la session
     els.sessionScore.textContent = `Session : ${sessionCorrect} / ${sessionAnswered}`;
-    els.sessionStreak.textContent = `Série : ${sessionStreak}`;
+    els.sessionStreak.textContent = `🔥 Série : ${sessionStreak}`;
 
     // Panneau Tableau de bord
     els.statGlobal.textContent = `${stats.masteredGlobalPercent} % (${stats.masteredGlobalCount} / ${stats.totalWords})`;
