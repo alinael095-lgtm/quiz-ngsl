@@ -350,7 +350,7 @@
       "se rendre"
     ],
     "fr_main": "aller",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 32,
@@ -487,7 +487,7 @@
       "devenir"
     ],
     "fr_main": "obtenir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 44,
@@ -508,7 +508,7 @@
       "tel que"
     ],
     "fr_main": "comme",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 46,
@@ -531,7 +531,7 @@
       "croire"
     ],
     "fr_main": "penser",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 48,
@@ -567,7 +567,7 @@
       "apercevoir"
     ],
     "fr_main": "voir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 51,
@@ -671,7 +671,7 @@
       "apporter"
     ],
     "fr_main": "prendre",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 60,
@@ -693,7 +693,7 @@
       "comme il faut"
     ],
     "fr_main": "bien",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 62,
@@ -729,7 +729,7 @@
       "tout simplement"
     ],
     "fr_main": "juste",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 65,
@@ -740,7 +740,7 @@
       "arriver"
     ],
     "fr_main": "venir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 66,
@@ -774,7 +774,7 @@
       "se servir de"
     ],
     "fr_main": "utiliser",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 69,
@@ -855,7 +855,7 @@
       "avoir l'air"
     ],
     "fr_main": "regarder",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 76,
@@ -879,7 +879,7 @@
       "accorder"
     ],
     "fr_main": "donner",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 78,
@@ -926,7 +926,7 @@
       "constater"
     ],
     "fr_main": "trouver",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 82,
@@ -1071,7 +1071,7 @@
       "de retour"
     ],
     "fr_main": "en arrière",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 95,
@@ -1093,7 +1093,7 @@
       "encore"
     ],
     "fr_main": "même",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 97,
@@ -1169,7 +1169,7 @@
       "raconter"
     ],
     "fr_main": "dire",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 104,
@@ -1192,7 +1192,7 @@
       "nommer"
     ],
     "fr_main": "appeler",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 106,
@@ -1249,7 +1249,7 @@
       "présenter"
     ],
     "fr_main": "montrer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 111,
@@ -1281,7 +1281,7 @@
       "modifier"
     ],
     "fr_main": "changer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 114,
@@ -1303,7 +1303,7 @@
       "long"
     ],
     "fr_main": "long",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 116,
@@ -1326,7 +1326,7 @@
       "se sentir"
     ],
     "fr_main": "sentir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 118,
@@ -1349,7 +1349,7 @@
       "toujours"
     ],
     "fr_main": "encore",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 120,
@@ -1417,7 +1417,7 @@
       "tenter"
     ],
     "fr_main": "essayer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 126,
@@ -1429,7 +1429,7 @@
       "laisser"
     ],
     "fr_main": "partir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 127,
@@ -1486,7 +1486,7 @@
       "moment"
     ],
     "fr_main": "point",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 132,
@@ -1520,7 +1520,7 @@
       "interroger"
     ],
     "fr_main": "demander",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 135,
@@ -1577,7 +1577,7 @@
       "placer"
     ],
     "fr_main": "mettre",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 140,
@@ -1609,7 +1609,7 @@
       "curiosité"
     ],
     "fr_main": "intérêt",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 143,
@@ -1676,7 +1676,7 @@
       "élevé"
     ],
     "fr_main": "haut",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 149,
@@ -1734,7 +1734,7 @@
       "résider"
     ],
     "fr_main": "vivre",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 154,
@@ -1789,7 +1789,7 @@
       "diffuser"
     ],
     "fr_main": "jouer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 159,
@@ -1901,7 +1901,7 @@
       "affaire"
     ],
     "fr_main": "cas",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 169,
@@ -1989,7 +1989,7 @@
       "type"
     ],
     "fr_main": "sorte",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 177,
@@ -2001,7 +2001,7 @@
       "maintenir"
     ],
     "fr_main": "garder",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 178,
@@ -2082,12 +2082,13 @@
     "en": "set",
     "pos": "verb",
     "fr": [
-      "mettre",
       "fixer",
-      "poser"
+      "mettre",
+      "poser",
+      "régler"
     ],
     "fr_main": "fixer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 186,
@@ -2187,7 +2188,7 @@
       "devenir"
     ],
     "fr_main": "tourner",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 195,
@@ -2210,7 +2211,7 @@
       "ramener"
     ],
     "fr_main": "apporter",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 197,
@@ -2239,10 +2240,11 @@
     "en": "state",
     "pos": "noun",
     "fr": [
-      "état"
+      "état",
+      "condition"
     ],
     "fr_main": "état",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 200,
@@ -2254,7 +2256,7 @@
       "déménager"
     ],
     "fr_main": "bouger",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 201,
@@ -2409,7 +2411,7 @@
       "ouvrir"
     ],
     "fr_main": "ouvrir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 215,
@@ -2420,7 +2422,7 @@
       "commande"
     ],
     "fr_main": "ordre",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 216,
@@ -2497,7 +2499,7 @@
       "organiser"
     ],
     "fr_main": "tenir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 223,
@@ -2684,7 +2686,7 @@
       "clore"
     ],
     "fr_main": "fermer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 240,
@@ -2898,7 +2900,7 @@
       "chef"
     ],
     "fr_main": "tête",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 260,
@@ -3058,7 +3060,7 @@
       "file"
     ],
     "fr_main": "ligne",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 275,
@@ -3069,7 +3071,7 @@
       "actuel"
     ],
     "fr_main": "présent",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 276,
@@ -3320,7 +3322,7 @@
       "difficile"
     ],
     "fr_main": "dur",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 299,
@@ -3435,12 +3437,13 @@
     "en": "stand",
     "pos": "verb",
     "fr": [
+      "être debout",
       "se tenir debout",
       "supporter",
       "résister"
     ],
-    "fr_main": "se tenir debout",
-    "checked": false
+    "fr_main": "être debout",
+    "checked": true
   },
   {
     "rank": 310,
@@ -3639,7 +3642,7 @@
       "surveiller"
     ],
     "fr_main": "regarder",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 327,
@@ -3696,7 +3699,7 @@
       "énergie"
     ],
     "fr_main": "pouvoir",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 332,
@@ -3793,12 +3796,13 @@
     "en": "matter",
     "pos": "noun",
     "fr": [
-      "affaire",
       "question",
-      "matière"
+      "matière",
+      "affaire",
+      "sujet"
     ],
-    "fr_main": "affaire",
-    "checked": false
+    "fr_main": "question",
+    "checked": true
   },
   {
     "rank": 341,
@@ -3906,7 +3910,7 @@
       "lampe"
     ],
     "fr_main": "lumière",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 350,
@@ -4001,7 +4005,7 @@
       "personnage"
     ],
     "fr_main": "chiffre",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 358,
@@ -4048,7 +4052,7 @@
       "thème"
     ],
     "fr_main": "sujet",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 362,
@@ -4390,7 +4394,7 @@
       "ton"
     ],
     "fr_main": "son",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 391,
@@ -4445,7 +4449,7 @@
       "indépendant"
     ],
     "fr_main": "libre",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 396,
@@ -4685,7 +4689,7 @@
       "transmettre"
     ],
     "fr_main": "passer",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 417,
@@ -5126,7 +5130,7 @@
       "soutenir"
     ],
     "fr_main": "supporter",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 456,
@@ -5615,7 +5619,7 @@
       "accusation"
     ],
     "fr_main": "charge",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 499,
@@ -6747,12 +6751,13 @@
     "en": "fine",
     "pos": "adj",
     "fr": [
-      "fin",
-      "beau",
-      "bon"
+      "très bien",
+      "bien",
+      "bon",
+      "fin"
     ],
-    "fr_main": "fin",
-    "checked": false
+    "fr_main": "très bien",
+    "checked": true
   },
   {
     "rank": 598,
@@ -7095,7 +7100,7 @@
       "berge"
     ],
     "fr_main": "banque",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 628,
@@ -9572,7 +9577,7 @@
       "allumette"
     ],
     "fr_main": "match",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 851,
@@ -12144,12 +12149,12 @@
     "en": "fair",
     "pos": "adj",
     "fr": [
-      "juste",
       "équitable",
+      "juste",
       "loyal"
     ],
-    "fr_main": "juste",
-    "checked": false
+    "fr_main": "équitable",
+    "checked": true
   },
   {
     "rank": 1081,
@@ -14930,7 +14935,7 @@
       "ressort"
     ],
     "fr_main": "printemps",
-    "checked": false
+    "checked": true
   },
   {
     "rank": 1333,
