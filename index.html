@@ -9,12 +9,16 @@
 <body>
   <main class="app-shell">
     <section class="quiz-card" id="quiz-card" aria-label="Quiz de vocabulaire NGSL">
-      <!-- Barre supérieure : palier, sens, mode révision -->
+      <!-- Barre supérieure : identité, thème, palier, sens, mode révision -->
       <header class="card-header">
         <div class="header-title-row">
-          <h1 class="app-title">Quiz NGSL</h1>
+          <div class="brand-lockup">
+            <span class="brand-dot" aria-hidden="true"></span>
+            <h1 class="app-title">Quiz NGSL</h1>
+            <span class="brand-version">1.2</span>
+          </div>
           <div class="header-right">
-            <span class="mode-badge" id="mode-badge" hidden>Mode Révision</span>
+            <span class="mode-badge" id="mode-badge" hidden>MODE RÉVISION</span>
             <button type="button" id="theme-btn" class="theme-btn" aria-label="Basculer entre thème clair et thème sombre" title="Basculer le thème">
               🌙 Sombre
             </button>
@@ -63,6 +67,8 @@
           <div class="target-word" id="target-word">—</div>
           <div class="pos-slot">
             <span class="pos-tag" id="pos-tag" aria-hidden="true"></span>
+            <span class="rank-pill" id="rank-pill" aria-hidden="true"></span>
+            <span class="mastery-indicator" id="mastery-indicator" aria-hidden="true"></span>
           </div>
         </div>
 

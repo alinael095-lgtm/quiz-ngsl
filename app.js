@@ -46,6 +46,8 @@
     questionArea: document.getElementById("question-area"),
     targetWord: document.getElementById("target-word"),
     posTag: document.getElementById("pos-tag"),
+    rankPill: document.getElementById("rank-pill"),
+    masteryIndicator: document.getElementById("mastery-indicator"),
     choicesGrid: document.getElementById("choices-grid"),
     feedbackZone: document.getElementById("feedback-zone"),
     feedbackPlaceholder: document.getElementById("feedback-placeholder"),
@@ -175,9 +177,14 @@
       els.progressTrack.setAttribute("aria-valuenow", String(stats.masteredTierPercent));
     }
 
-    // Score & série de la session
-    els.sessionScore.textContent = `Session : ${sessionCorrect} / ${sessionAnswered}`;
-    els.sessionStreak.textContent = `Série : ${sessionStreak}`;
+    // Score (+ taux de réussite en direct) & série de la session
+    if (sessionAnswered > 0) {
+      const accuracy = Math.round((sessionCorrect / sessionAnswered) * 100);
+      els.sessionScore.textContent = `Session : ${sessionCorrect} / ${sessionAnswered} · ${accuracy} %`;
+    } else {
+      els.sessionScore.textContent = "Session : 0 / 0";
+    }
+    els.sessionStreak.textContent = `🔥 Série : ${sessionStreak}`;
 
     // Panneau Tableau de bord
     els.statGlobal.textContent = `${stats.masteredGlobalPercent} % (${stats.masteredGlobalCount} / ${stats.totalWords})`;
@@ -204,6 +211,37 @@
     els.posTag.classList.remove("visible");
     els.posTag.setAttribute("aria-hidden", "true");
     els.posTag.textContent = "";
+    els.rankPill.classList.remove("visible");
+    els.rankPill.setAttribute("aria-hidden", "true");
+    els.rankPill.textContent = "";
+    els.masteryIndicator.classList.remove("visible", "is-mastered");
+    els.masteryIndicator.setAttribute("aria-hidden", "true");
+    els.masteryIndicator.innerHTML = "";
+  }
+
+  function renderMasteryIndicator(rank) {
+    const progress = logic.getWordProgress(state, rank);
+    const maxDots = logic.CONFIG.MASTERY_STREAK;
+    const filled = Math.min(progress.streak, maxDots);
+    const mastered = filled >= maxDots;
+
+    els.masteryIndicator.innerHTML = "";
+    const dotsWrap = document.createElement("span");
+    dotsWrap.className = "mastery-dots";
+    for (let i = 0; i < maxDots; i++) {
+      const dot = document.createElement("span");
+      dot.className = i < filled ? "mastery-dot filled" : "mastery-dot";
+      dotsWrap.appendChild(dot);
+    }
+
+    const textSpan = document.createElement("span");
+    textSpan.textContent = mastered ? `${filled}/${maxDots} maîtrisé` : `${filled}/${maxDots}`;
+
+    els.masteryIndicator.appendChild(dotsWrap);
+    els.masteryIndicator.appendChild(textSpan);
+    els.masteryIndicator.classList.toggle("is-mastered", mastered);
+    els.masteryIndicator.classList.add("visible");
+    els.masteryIndicator.setAttribute("aria-hidden", "false");
   }
 
   function renderNextQuestion() {
@@ -328,18 +366,25 @@
       sessionCorrect += 1;
     }
 
+    const prevBestStreak = state.stats.bestStreak || 0;
     const result = logic.recordAnswer(state, target.rank, isCorrect, {
       isReviewMode,
       currentSessionStreak: sessionStreak,
     });
     state = result.state;
     sessionStreak = result.nextSessionStreak;
+    const isNewRecord =
+      isCorrect && sessionStreak >= 3 && sessionStreak > prevBestStreak;
     saveState();
 
-    // Révéler le pos uniquement après réponse (section 10)
+    // Révéler le pos, le rang de fréquence et l'indicateur de maîtrise après réponse (section 10)
     els.posTag.textContent = POS_LABELS[target.pos] || target.pos;
     els.posTag.classList.add("visible");
     els.posTag.setAttribute("aria-hidden", "false");
+    els.rankPill.textContent = `#${target.rank}`;
+    els.rankPill.classList.add("visible");
+    els.rankPill.setAttribute("aria-hidden", "false");
+    renderMasteryIndicator(target.rank);
 
     // Colorer et ajouter les icônes ✓ / ✗ sur les boutons
     const buttons = els.choicesGrid.querySelectorAll(".choice-btn");
@@ -372,6 +417,8 @@
       extra = " Mot retiré des erreurs !";
     } else if (result.becameMastered) {
       extra = " Mot maîtrisé !";
+    } else if (isNewRecord) {
+      extra = " Nouveau record de série !";
     }
     els.feedbackStatus.textContent = `${statusIcon} ${statusBase}${extra}`;
 
@@ -380,7 +427,15 @@
     els.feedbackTranslations.textContent = `${target.en} — ${allFr}`;
 
     updateHeaderAndStats();
-    els.nextBtn.focus();
+
+    // Micro-animation pop sur le badge série en cas de bonne réponse
+    if (isCorrect) {
+      els.sessionStreak.classList.remove("is-pop");
+      void els.sessionStreak.offsetWidth;
+      els.sessionStreak.classList.add("is-pop");
+    }
+
+    els.nextBtn.focus({ preventScroll: true });
   }
 
   function showBackupMessage(text, isError) {
