@@ -1,0 +1,42 @@
+name: CI Quiz NGSL
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validation données, syntaxe JS et tests Node
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Configurer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Valider data/ngsl_words.json et vérifier la synchronisation de data/words.js
+        run: |
+          PHASE=$(python3 -c 'import json; d = json.load(open("data/ngsl_words.json", encoding="utf-8")); print(2 if len(d) == 2809 else 1)')
+          echo "Validation en mode phase $PHASE"
+          python3 prepare_data.py --phase "$PHASE" --output /tmp/words.js
+          diff -u data/words.js /tmp/words.js
+
+      - name: Vérifier la syntaxe JavaScript
+        run: |
+          node --check logic.js
+          node --check app.js
+          node --check data/words.js
+
+      - name: Lancer les tests unitaires Node
+        run: node logic.test.js
