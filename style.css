@@ -185,11 +185,11 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  line-height: 1.45;
+  line-height: 1.4;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding: 28px 16px;
+  padding: 16px 14px;
   transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
@@ -215,13 +215,13 @@ body {
   border: 2px solid var(--border);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
-  padding: 24px 26px 20px;
+  padding: 18px 22px 14px;
   transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
 /* En-tête chaleureux et épuré */
 .card-header {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .header-title-row {
@@ -229,7 +229,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .brand-lockup {
@@ -371,9 +371,9 @@ body {
 }
 
 .review-empty-hint {
-  margin: 6px 0 0;
-  min-height: 18px;
-  font-size: 0.82rem;
+  margin: 4px 0 0;
+  min-height: 16px;
+  font-size: 0.78rem;
   color: var(--text-muted);
 }
 
@@ -381,18 +381,18 @@ body {
 .session-bar {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  margin-bottom: 22px;
+  gap: 9px;
+  margin-bottom: 14px;
 }
 
 .progress-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--text-muted);
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 #progress-percent {
@@ -401,7 +401,7 @@ body {
 
 .progress-track {
   width: 100%;
-  height: 14px;
+  height: 12px;
   background: var(--track-bg);
   border-radius: var(--radius-pill);
   overflow: hidden;
@@ -453,21 +453,25 @@ body {
   color: var(--streak-text);
 }
 
+#session-streak.is-pop {
+  animation: popBadge 140ms ease;
+}
+
 /* Carte flashcard du mot cible avec léger effet "pile de cartes" */
 .word-display {
   position: relative;
   text-align: center;
-  padding: 30px 20px 22px;
-  margin-bottom: 22px;
+  padding: 20px 18px 14px;
+  margin-bottom: 14px;
   border: 2px solid var(--border);
   border-bottom-width: 4px;
   border-radius: var(--radius-lg);
   background: var(--surface-subtle);
-  box-shadow: 0 6px 0 -2px var(--card-stack);
+  box-shadow: 0 5px 0 -2px var(--card-stack);
 }
 
 .target-word {
-  font-size: clamp(2.1rem, 6vw, 3.1rem);
+  font-size: clamp(2rem, 5.5vw, 2.85rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -476,8 +480,8 @@ body {
 }
 
 .pos-slot {
-  min-height: 30px;
-  margin-top: 12px;
+  min-height: 28px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -515,6 +519,26 @@ body {
   opacity: 1;
 }
 
+/* Pilule discrète du rang de fréquence (#142) révélée après réponse */
+.rank-pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.rank-pill.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Indicateur visuel de maîtrise du mot en cours (●●○) révélé après réponse */
 .mastery-indicator {
   display: inline-flex;
@@ -541,6 +565,7 @@ body {
   border-color: var(--success-border);
   background: var(--success-bg);
   color: var(--success);
+  animation: popBadge 140ms ease;
 }
 
 .mastery-dots {
@@ -568,17 +593,17 @@ body {
 .choices-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-  margin-bottom: 18px;
+  gap: 10px;
+  margin-bottom: 14px;
 }
 
 .choice-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   width: 100%;
-  min-height: 58px;
-  padding: 12px 16px;
+  min-height: 52px;
+  padding: 10px 14px;
   border-radius: var(--radius-lg);
   border: 2px solid var(--border);
   border-bottom: 4px solid var(--border-shadow);
@@ -667,6 +692,7 @@ body {
   border-color: var(--error-border);
   border-bottom-color: var(--error-shadow);
   color: var(--error);
+  animation: shakeWrong 140ms ease;
 }
 
 .choice-btn.is-wrong .choice-key {
@@ -681,14 +707,14 @@ body {
 
 /* Zone de résultat de hauteur fixe, douce et encourageante */
 .feedback-zone {
-  min-height: 108px;
-  padding: 14px 18px;
+  min-height: 90px;
+  padding: 12px 16px;
   border-radius: var(--radius-lg);
   border: 2px solid var(--border);
   background: var(--surface-subtle);
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   transition: background-color var(--transition-fast), border-color var(--transition-fast);
 }
 
@@ -964,11 +990,38 @@ kbd {
   }
 }
 
+/* Micro-animations courtes <= 150 ms */
+@keyframes popBadge {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shakeWrong {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-4px);
+  }
+  70% {
+    transform: translateX(4px);
+  }
+}
+
 /* Respect des préférences de réduction de mouvement */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
     transition: none !important;
+    animation: none !important;
   }
 }

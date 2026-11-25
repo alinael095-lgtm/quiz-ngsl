@@ -46,6 +46,7 @@
     questionArea: document.getElementById("question-area"),
     targetWord: document.getElementById("target-word"),
     posTag: document.getElementById("pos-tag"),
+    rankPill: document.getElementById("rank-pill"),
     masteryIndicator: document.getElementById("mastery-indicator"),
     choicesGrid: document.getElementById("choices-grid"),
     feedbackZone: document.getElementById("feedback-zone"),
@@ -176,8 +177,13 @@
       els.progressTrack.setAttribute("aria-valuenow", String(stats.masteredTierPercent));
     }
 
-    // Score & série de la session
-    els.sessionScore.textContent = `Session : ${sessionCorrect} / ${sessionAnswered}`;
+    // Score (+ taux de réussite en direct) & série de la session
+    if (sessionAnswered > 0) {
+      const accuracy = Math.round((sessionCorrect / sessionAnswered) * 100);
+      els.sessionScore.textContent = `Session : ${sessionCorrect} / ${sessionAnswered} · ${accuracy} %`;
+    } else {
+      els.sessionScore.textContent = "Session : 0 / 0";
+    }
     els.sessionStreak.textContent = `🔥 Série : ${sessionStreak}`;
 
     // Panneau Tableau de bord
@@ -205,6 +211,9 @@
     els.posTag.classList.remove("visible");
     els.posTag.setAttribute("aria-hidden", "true");
     els.posTag.textContent = "";
+    els.rankPill.classList.remove("visible");
+    els.rankPill.setAttribute("aria-hidden", "true");
+    els.rankPill.textContent = "";
     els.masteryIndicator.classList.remove("visible", "is-mastered");
     els.masteryIndicator.setAttribute("aria-hidden", "true");
     els.masteryIndicator.innerHTML = "";
@@ -357,18 +366,24 @@
       sessionCorrect += 1;
     }
 
+    const prevBestStreak = state.stats.bestStreak || 0;
     const result = logic.recordAnswer(state, target.rank, isCorrect, {
       isReviewMode,
       currentSessionStreak: sessionStreak,
     });
     state = result.state;
     sessionStreak = result.nextSessionStreak;
+    const isNewRecord =
+      isCorrect && sessionStreak >= 3 && sessionStreak > prevBestStreak;
     saveState();
 
-    // Révéler le pos et l'indicateur de maîtrise uniquement après réponse (section 10)
+    // Révéler le pos, le rang de fréquence et l'indicateur de maîtrise après réponse (section 10)
     els.posTag.textContent = POS_LABELS[target.pos] || target.pos;
     els.posTag.classList.add("visible");
     els.posTag.setAttribute("aria-hidden", "false");
+    els.rankPill.textContent = `#${target.rank}`;
+    els.rankPill.classList.add("visible");
+    els.rankPill.setAttribute("aria-hidden", "false");
     renderMasteryIndicator(target.rank);
 
     // Colorer et ajouter les icônes ✓ / ✗ sur les boutons
@@ -402,6 +417,8 @@
       extra = " Mot retiré des erreurs !";
     } else if (result.becameMastered) {
       extra = " Mot maîtrisé !";
+    } else if (isNewRecord) {
+      extra = " Nouveau record de série !";
     }
     els.feedbackStatus.textContent = `${statusIcon} ${statusBase}${extra}`;
 
@@ -410,7 +427,15 @@
     els.feedbackTranslations.textContent = `${target.en} — ${allFr}`;
 
     updateHeaderAndStats();
-    els.nextBtn.focus();
+
+    // Micro-animation pop sur le badge série en cas de bonne réponse
+    if (isCorrect) {
+      els.sessionStreak.classList.remove("is-pop");
+      void els.sessionStreak.offsetWidth;
+      els.sessionStreak.classList.add("is-pop");
+    }
+
+    els.nextBtn.focus({ preventScroll: true });
   }
 
   function showBackupMessage(text, isError) {
