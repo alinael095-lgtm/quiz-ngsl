@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz NGSL — Vocabulaire anglais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="quiz-card" id="quiz-card" aria-label="Quiz de vocabulaire NGSL">
+      <!-- Barre supérieure : palier, sens, mode révision -->
+      <header class="card-header">
+        <div class="header-title-row">
+          <h1 class="app-title">Quiz NGSL</h1>
+          <span class="mode-badge" id="mode-badge" hidden>Mode Révision</span>
+        </div>
+
+        <div class="controls-row">
+          <label class="control-group" for="tier-select">
+            <span class="sr-only">Palier de difficulté</span>
+            <select id="tier-select" class="control-select" aria-label="Palier de difficulté"></select>
+          </label>
+
+          <button type="button" id="direction-btn" class="control-btn" title="Changer le sens de traduction">
+            EN → FR
+          </button>
+
+          <button type="button" id="review-btn" class="control-btn control-btn-review" disabled>
+            Révision (0)
+          </button>
+        </div>
+
+        <p class="review-empty-hint" id="review-empty-hint" aria-live="polite"></p>
+      </header>
+
+      <!-- Barre de progression du palier + score et série de session -->
+      <div class="session-bar">
+        <div class="progress-wrapper">
+          <div class="progress-meta">
+            <span id="progress-label">Palier : 0 / 0 maîtrisés</span>
+            <span id="progress-percent">0 %</span>
+          </div>
+          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="session-metrics">
+          <span class="metric-pill" id="session-score">Session : 0 / 0</span>
+          <span class="metric-pill" id="session-streak">Série : 0</span>
+        </div>
+      </div>
+
+      <!-- Zone de question -->
+      <div class="question-area" id="question-area">
+        <div class="word-display">
+          <div class="target-word" id="target-word">—</div>
+          <div class="pos-slot">
+            <span class="pos-tag" id="pos-tag" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <!-- Grille 2x2 des 4 propositions -->
+        <div class="choices-grid" id="choices-grid" role="group" aria-label="Propositions de réponse"></div>
+
+        <!-- Zone de résultat de hauteur fixe (évite les sauts de mise en page) -->
+        <div class="feedback-zone" id="feedback-zone" aria-live="polite">
+          <div class="feedback-placeholder" id="feedback-placeholder">
+            Choisis une réponse (clic ou touches <kbd>1</kbd>–<kbd>4</kbd>).
+          </div>
+          <div class="feedback-content" id="feedback-content" hidden>
+            <div class="feedback-text">
+              <p class="feedback-status" id="feedback-status"></p>
+              <p class="feedback-translations" id="feedback-translations"></p>
+            </div>
+            <button type="button" id="next-btn" class="next-btn">
+              Suivant <kbd>↵</kbd>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- État spécial : palier maîtrisé ou révision vide -->
+      <div class="special-state" id="special-state" hidden>
+        <p class="special-title" id="special-title"></p>
+        <p class="special-subtitle" id="special-subtitle"></p>
+        <button type="button" class="primary-action-btn" id="special-action-btn"></button>
+      </div>
+
+      <!-- Panneau repliable : statistiques globales, export/import, réinitialisation -->
+      <details class="dashboard-panel" id="dashboard-panel">
+        <summary class="dashboard-summary">Tableau de bord et sauvegarde</summary>
+        <div class="dashboard-body">
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-label">Maîtrisés (global)</span>
+              <strong class="stat-value" id="stat-global">0 % (0 / 0)</strong>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Maîtrisés (palier)</span>
+              <strong class="stat-value" id="stat-tier">0 % (0 / 0)</strong>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Erreurs à réviser</span>
+              <strong class="stat-value" id="stat-errors">0</strong>
+            </div>
+            <div class="stat-box">
+              <span class="stat-label">Meilleure série</span>
+              <strong class="stat-value" id="stat-best-streak">0</strong>
+            </div>
+          </div>
+
+          <div class="backup-actions">
+            <button type="button" id="export-btn" class="secondary-btn">Exporter JSON</button>
+            <button type="button" id="import-btn" class="secondary-btn">Importer JSON</button>
+            <input type="file" id="import-file-input" accept=".json,application/json" hidden>
+            <button type="button" id="reset-btn" class="danger-btn">Réinitialiser ma progression</button>
+          </div>
+
+          <p class="backup-message" id="backup-message" aria-live="polite"></p>
+        </div>
+      </details>
+
+      <!-- Pied de page avec mention de licence obligatoire -->
+      <footer class="card-footer">
+        Browne, C., Culligan, B. &amp; Phillips, J. (2013). The New General Service List. CC BY-SA 4.0
+      </footer>
+    </section>
+  </main>
+
+  <!-- Chargement sans modules ES pour fonctionner hors ligne en double-clic (file://) -->
+  <script src="data/words.js"></script>
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
