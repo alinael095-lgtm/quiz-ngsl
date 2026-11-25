@@ -119,11 +119,13 @@
     }
 
     const effective = getEffectiveTheme();
-    els.themeBtn.textContent = effective === "dark" ? "☀️ Clair" : "🌙 Sombre";
+    els.themeBtn.textContent = effective === "dark" ? "☀" : "☾";
     els.themeBtn.setAttribute(
       "aria-label",
       effective === "dark" ? "Passer au thème clair" : "Passer au thème sombre"
     );
+    els.themeBtn.title =
+      effective === "dark" ? "Passer au thème clair" : "Passer au thème sombre";
   }
 
   function populateTierSelect() {
@@ -151,9 +153,13 @@
     els.reviewBtn.textContent = `Révision (${stats.errorsCount})`;
     if (stats.errorsCount === 0 && !isReviewMode) {
       els.reviewBtn.disabled = true;
+      els.reviewBtn.title = "Aucune erreur à réviser";
       els.reviewEmptyHint.textContent = "Aucune erreur à réviser";
     } else {
       els.reviewBtn.disabled = false;
+      els.reviewBtn.title = isReviewMode
+        ? "Quitter le mode révision"
+        : "Réviser les erreurs (2 bonnes réponses d’affilée retirent un mot)";
       els.reviewEmptyHint.textContent = isReviewMode
         ? "Mode révision actif : 2 bonnes réponses d’affilée retirent un mot des erreurs."
         : "";
@@ -164,27 +170,28 @@
     els.modeBadge.hidden = !isReviewMode;
     els.tierSelect.disabled = isReviewMode;
 
-    // Barre de progression
+    // Barre de progression fine + résumé compact
     if (isReviewMode) {
-      els.progressLabel.textContent = `Révision : ${stats.errorsCount} erreur(s) restante(s)`;
+      els.progressLabel.textContent = `Révision : ${stats.errorsCount} restante(s)`;
       els.progressPercent.textContent = "";
       els.progressFill.style.width = stats.errorsCount === 0 ? "100%" : "0%";
       els.progressTrack.setAttribute("aria-valuenow", stats.errorsCount === 0 ? "100" : "0");
     } else {
-      els.progressLabel.textContent = `Palier : ${stats.masteredTierCount} / ${stats.tierTotal} maîtrisés`;
-      els.progressPercent.textContent = `${stats.masteredTierPercent} %`;
+      els.progressLabel.textContent = `${stats.masteredTierCount} / ${stats.tierTotal} maîtrisés`;
+      els.progressPercent.textContent = `(${stats.masteredTierPercent} %)`;
       els.progressFill.style.width = `${stats.masteredTierPercent}%`;
       els.progressTrack.setAttribute("aria-valuenow", String(stats.masteredTierPercent));
     }
 
-    // Score (+ taux de réussite en direct) & série de la session
+    // Score (+ taux de réussite en direct) & série de la session (neutre quand = 0)
     if (sessionAnswered > 0) {
       const accuracy = Math.round((sessionCorrect / sessionAnswered) * 100);
-      els.sessionScore.textContent = `Session : ${sessionCorrect} / ${sessionAnswered} · ${accuracy} %`;
+      els.sessionScore.textContent = `${sessionCorrect}/${sessionAnswered} (${accuracy} %)`;
     } else {
-      els.sessionScore.textContent = "Session : 0 / 0";
+      els.sessionScore.textContent = "0/0";
     }
-    els.sessionStreak.textContent = `🔥 Série : ${sessionStreak}`;
+    els.sessionStreak.textContent = `🔥 ${sessionStreak}`;
+    els.sessionStreak.classList.toggle("has-streak", sessionStreak > 0);
 
     // Panneau Tableau de bord
     els.statGlobal.textContent = `${stats.masteredGlobalPercent} % (${stats.masteredGlobalCount} / ${stats.totalWords})`;
