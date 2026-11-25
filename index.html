@@ -9,18 +9,14 @@
 <body>
   <main class="app-shell">
     <section class="quiz-card" id="quiz-card" aria-label="Quiz de vocabulaire NGSL">
-      <!-- Barre supérieure : identité, thème, palier, sens, mode révision -->
+      <!-- Barre supérieure compacte : titre, thème, contrôles sur 1 ligne -->
       <header class="card-header">
         <div class="header-title-row">
-          <div class="brand-lockup">
-            <span class="brand-dot" aria-hidden="true"></span>
-            <h1 class="app-title">Quiz NGSL</h1>
-            <span class="brand-version">1.2</span>
-          </div>
+          <h1 class="app-title">Quiz NGSL</h1>
           <div class="header-right">
             <span class="mode-badge" id="mode-badge" hidden>MODE RÉVISION</span>
-            <button type="button" id="theme-btn" class="theme-btn" aria-label="Basculer entre thème clair et thème sombre" title="Basculer le thème">
-              🌙 Sombre
+            <button type="button" id="theme-btn" class="theme-btn" aria-label="Changer de thème" title="Changer de thème">
+              ☾
             </button>
           </div>
         </div>
@@ -35,29 +31,29 @@
             EN → FR
           </button>
 
-          <button type="button" id="review-btn" class="control-btn control-btn-review" disabled>
+          <button type="button" id="review-btn" class="control-btn control-btn-review" disabled title="Aucune erreur à réviser">
             Révision (0)
           </button>
         </div>
 
-        <p class="review-empty-hint" id="review-empty-hint" aria-live="polite"></p>
+        <p class="sr-only" id="review-empty-hint" aria-live="polite"></p>
       </header>
 
-      <!-- Barre de progression du palier + score et série de session -->
+      <!-- Progression + session + série fusionnées en un bandeau fin -->
       <div class="session-bar">
-        <div class="progress-wrapper">
-          <div class="progress-meta">
-            <span id="progress-label">Palier : 0 / 0 maîtrisés</span>
-            <span id="progress-percent">0 %</span>
-          </div>
-          <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track">
-            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
-          </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track">
+          <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
         </div>
-
-        <div class="session-metrics">
-          <span class="metric-pill" id="session-score">Session : 0 / 0</span>
-          <span class="metric-pill" id="session-streak">Série : 0</span>
+        <div class="session-inline-meta">
+          <span class="meta-progress">
+            <span id="progress-label">0 / 0 maîtrisés</span>
+            <span id="progress-percent">0 %</span>
+          </span>
+          <span class="meta-session">
+            <span id="session-score">0 / 0</span>
+            <span class="meta-sep" aria-hidden="true">·</span>
+            <span class="streak-inline" id="session-streak">🔥 0</span>
+          </span>
         </div>
       </div>
 
