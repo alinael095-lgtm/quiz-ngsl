@@ -338,11 +338,11 @@
     "en": "will",
     "pos": "modal",
     "fr": [
-      "futur",
-      "aller",
+      "(futur)",
+      "aller (auxiliaire)",
       "vouloir"
     ],
-    "fr_main": "futur",
+    "fr_main": "(futur)",
     "checked": false,
     "ai_reviewed": true
   },
@@ -437,10 +437,11 @@
     "en": "would",
     "pos": "modal",
     "fr": [
+      "(conditionnel)",
       "voudrait",
-      "conditionnel"
+      "ferait"
     ],
-    "fr_main": "voudrait",
+    "fr_main": "(conditionnel)",
     "checked": false,
     "ai_reviewed": true
   },
