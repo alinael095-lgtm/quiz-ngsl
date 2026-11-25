@@ -138,6 +138,10 @@ def validate_words(words, phase):
         if not isinstance(checked, bool):
             errors.append(f"{prefix} ({en!r}) : 'checked' doit être un booléen.")
 
+        # Validation optionnelle de ai_reviewed (audit IA distinct de la relecture humaine)
+        if "ai_reviewed" in item and not isinstance(item["ai_reviewed"], bool):
+            errors.append(f"{prefix} ({en!r}) : 'ai_reviewed' doit être un booléen.")
+
     # En phase 2, les rangs doivent être continus de 1 à 2 809
     if phase == 2 and len(seen_ranks) == MAX_RANK:
         expected_ranks = set(range(MIN_RANK, MAX_RANK + 1))
